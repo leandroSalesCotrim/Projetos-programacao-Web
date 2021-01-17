@@ -1,0 +1,122 @@
+<html>
+    <head>
+            <meta charset = "utf-8">
+            <title>Fale Conosco</title>
+            <link rel = "stylesheet" href="../css/style.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+            <link rel = "stylesheet" href="../css/style.css">
+            <link href = "https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+            <link href = "../img/icon/CodeStormIcone.png" rel="icon">
+    </head>
+    <body>
+        <header id = "nav">
+            <div id = "navTop">
+                <div id = "divLogo"><img src = "../img/icon/CodeStormLogo.png" id = "logo"></div>
+                <div class="barra-pesquisa">
+                    <form class="form-inline my-0 my-lg-0">
+                      <input type="search" class="form-control form-control-sm" id="colFormLabelSm" placeholder="Escreva aqui o que deseja buscar em nossa loja ♥">
+                    <button type="submit" class="btn-sm btn-primary "id="btn-index-pesquisa">Pesquisar</button>
+                    </form>
+                </div>
+                <div id = "divIcones">
+                    <div id = "divTelaCadastro">
+                    <img id = "perfil" src = "../img/icon/unnamed.png">
+                    <h1 id = "EntrarCadastrarTxt">Bem vindo, Cliente<p>
+                        <a href="../logout.php" >Sair</p></h1>
+                    <br>
+                    </div>
+                    <div id = "divCarrinho"><a href = "#"><img id = "carrinho" src = "../img/icon/Cart.png"></a></div>
+                </div>
+            </div>
+            <div id = "navDown">
+                <img src = "../img/detalhe/moldeNav.png" id="moldeNav">
+                <div id = "linkTop">
+                <a href = "index-area-restrita-cliente.php" id = "link"><h1 id = "linkTxt">Inicio</h1></a>
+                <a href = "#" id = "link"><h1 id = "linkTxt">Destaques</h1></a>
+                <a href = "#" id = "link"><h1 id = "linkTxt">Descontos</h1></a>
+                <a href = "contato.php" id = "link"><h1 id = "linkTxt">Contato</h1></a>
+                </div>
+                <div id = "linkDown">
+                <a href = "pecas.php" id = "link"><h1 id = "linkTxt2">Peças</h1></a>
+                <a href = "perifericos.php" id = "link"><h1 id = "linkTxt2">Periféricos</h1></a>
+                <a href = "computador.php" id = "link"><h1 id = "linkTxt2">Computador</h1></a>
+                <a href = "notebook.php" id = "link"><h1 id = "linkTxt2">Notebook</h1></a>
+                </div>
+            </div>
+        </header>
+
+        <div class="corpo">
+            <div class="detalhe">
+                <div class="imgDetalhe">
+                    <img class="imgD"src="../img/detalhe/detalheE.png">
+                </div>
+                <div class="meioDetalhe">
+                    <h4 class="meioDetalhetTxt">ENTRE EM CONTATO</h4>
+                </div>
+                <div class="imgDetalhe2">
+                    <img class="imgD"src="../img/detalhe/detalheD.png">
+                </div>
+            </div>
+            <div class="faleConosco">
+                <form>
+                    <div class="form-group">
+                        <label>Nome</label>
+                        <input class="form-control" type="text">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1">
+                        <label>Telefone</label>
+                        <input class="form-control" type="text">
+                        <label for="exampleFormControlTextarea1">Dúvidas, Críticas ou Sujestões</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" maxlength="200"></textarea>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            <hr>
+            <footer class="footer">
+                <div class="container-foot">
+                    <div class="link-footer">
+                        <br>
+                        <img src="../img/icon/icon-info.png">
+                        <a href="">Sobre a</a>
+                        <br>
+                        <img src="../img/icon/icon-bag.png">
+                        <a href="">Trabalhe Conosco</a>
+                        <br>
+                        <img src="../img/icon/icon-email.png">
+                        <a href="../contato.php">Entre em Contato</a>
+                        <br>
+                        <img src="../img/icon/icon-eyeoff.png">
+                        <a href="">Política de Privacidade</a>
+                        <br>
+                        <img src="../img/icon/icon-change.png">
+                        <a href="">Troca e Devolução</a>
+                        <br>
+                        <img src="../img/icon/carroFrete.png">
+                        <a href="">Frete e Envio</a>
+                    </div>
+                    <div class="endereco-footer">
+                        <div class="iconmap">
+                            <img src="../img/icon/icon-map.png">
+                        </div>
+                        <div class="text-endereco">
+                            <p<br>
+                            R. Júlio Guetardilho, 90<br>
+                            Próx. Praça do Lazaro - Candeias - Vila América, SP<br>
+                            Seg. à sex. 10h - 16h. Sáb. 10h - 16h
+                            </p>
+                        </div>
+                    </div>
+                    <div class="social-footer">
+                        <div class="cont-img-social">
+                            <a href=""><img src="../img/icon/icon-twitter.png"></a>
+                            <a href=""><img src="../img/icon/icon-youtube.png"></a>
+                            <a href=""><img src="../img/icon/icon-instagram.png"></a>
+                            <a href=""><img src="../img/icon/iconfacebook.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
