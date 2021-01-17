@@ -1,0 +1,138 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <Title>Sunshine Clothes</Title>
+    <link rel="stylesheet" href="Css/reset.css">
+    <link rel="stylesheet" href="Css/estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="img/icon.png" rel="icon">
+</head>
+
+
+<body id="body_home">
+  
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h1 id="txtOrçamento"> Orçamento </h1>
+    <hr id="hrO">
+    <br>
+    <form name="frmOrçamento" id="frmOrçamento">
+        <label id="lblname">Insira seu nome completo: </label>
+        <br>
+        <input type="text" id="txtname" placeholder="                     Nome completo">
+        <br><br>
+        <label id="lblmail">Insira seu E-Mail: </label>
+        <br>
+        <input type="email" id="txtmail" placeholder="                    Insira seu E-Mail ">
+        <br><br>
+        <label id="lblnum">Insira seu numero de telefone: </label>
+        <br>
+        <input type="number" id="txtnum" placeholder="                       (11) 1234-5678">
+        <br><br>
+        <label for slcProd id="lblprod"> Escolha o produto desejado: </label>
+        <br>
+        <select id="slcProd" name="slcProd">
+               <option selected>  </option>
+               <option value="1">Moletom Estampado</option>
+               <option value="2">Oculos Anti UV oval(vermelho)</option>
+               <option value="3">Oculos Grungetteria kurt (branco)</option>
+               <option value="4">Sandalia Floral</option>
+               <option value="5">Mandala Rubi Rodio</option>
+               <option value="6">Cropped Adidas</option>
+               <option value="7">Adidas Cosmic 2</option>
+               <option value="8">Bolsa Pipoca</option>
+               <option value="9">Sandalia Cartago</option>
+               <option value="10">Nike Revolution 4 WMNS</option>
+        </select>
+        <br><br>
+        <input type="button" value="Calcular" id="btnCalcular" onclick="Calcular()">
+        <button id="limpar" type="submit">Limpar</button><br><br>
+        <label for txtResul id="lblResult">Valor do Produto:</label>
+        <input type="text" id="txtResultado" readonly value=''>
+        <br>
+        
+
+
+
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm">
+    <a href="index.html"><img id="menu_orçamento1" src="img/menu_orçamento1.png"></a>
+          </div>
+          <div class="col-sm">
+    <a href="secaof.html"><img id="menu_orçamento2" src="img/menu_orçamento2.png"></a>
+          </div>
+          <div class="col-sm">
+    <a href="secaom.html"><img id="menu_orçamento3" src="img/menu_orçamento3.png"></a>
+          </div>
+          <div class="col-sm">
+    <a href="secaok.html"><img id="menu_orçamento4" src="img/menu_orçamento4.png"></a>
+          </div>
+          </div>
+        </div>
+
+
+    <img id="icon_roda" src="img/icon.png">
+    <footer id="rodape">
+        <div id="info">
+            
+
+                <div class="container">
+                    <div class="row">
+                      <div class="col-sm">
+                          <img id="icon_facebook" src="img/1024px-Facebook_Icon_(Single_Path_-_Transparent__f_).svg.png">
+                      </div>
+                      <div class="col-sm">
+                          <img id="icon_instagram" src="img/Instagram_icon.png">
+                      </div>
+                      <div class="col-sm">
+                          <img id="icon_whatsapp" src="img/WhatsApp-icone.png">
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="container">
+                    <div class="row">
+                       <div class="col-sm">
+                          <p>Rua Hermann Hering, 1790, Bom Retiro CEP 89010-900
+                              Blumenau SC
+                              CNPJ: 78.876.950/0001-71 Insc. Estadual: 251.213.749</p>
+                       </div>
+                   </div>
+                </div>
+          <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                    <img id="cartao" src="img/cartao.png">
+              </div>
+            </div>
+            </div>
+          </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
