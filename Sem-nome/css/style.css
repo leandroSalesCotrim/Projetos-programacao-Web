@@ -7,55 +7,77 @@
     background-color:#1802db1e;
     position: fixed;
     width: 100%;
-    height: 14%;
+    height: 4em;
 }
 #divLogo{
     height: 100%;
-    width: 7%;
-    margin-left: 2%;
+    width: 8%;
+    margin-left: 4%;
     float: left;
+    position: relative;
 }
 #logo{
-    width: 100%;
+    width: auto;
+    height: 100%;
 }
 
 #divLink{
-    width: 70%;
+    width:80%;
     height: 100%;
-    margin-top: 2%;
     float: left;
-}
-.linkAtivo  {
-    color: white;
-    margin-top: 1%;
-    margin-left: 10%;
-    float: left;
-    text-decoration-color: #00BD32;
-    text-decoration-thickness: 3px;
-    font-family: 'Spartan', sans-serif;
-    font-size: 25px;
     
 }
-#divLink .link   {
+.linkInicio  {
+    color: white;
+    margin-top: 1.8%;
+    margin-left: 8%;
+    float: left;
+    text-decoration: none;
+    font-family: 'Spartan', sans-serif;
+    font-size: 0.6em;
+}
+ .linkContato   {
     color: white;
     margin-left: 10%;
+    margin-top: 1%;
     float: left;
     text-decoration: none;
     text-decoration-color: rgba(0, 0, 0, 0);
     font-family: 'Spartan', sans-serif;
-    font-size: 25px;
-
+    font-size: 0.6em;
 }
-#divLink .linkAtivo:hover{
-    transition: 0.3s;
+ .linkSobre   {
+    color: white;
+    margin-left: 10%;
+    margin-top: 1%;
+    float: left;
+    text-decoration: none;
+    text-decoration-color: rgba(0, 0, 0, 0);
+    font-family: 'Spartan', sans-serif;
+    font-size: 0.6em;
+}
+ .linkProjeto   {
+    color: white;
+    margin-left: 10%;
+    margin-top: 1%;
+    float: left;
+    text-decoration: none;
+    text-decoration-color: rgba(0, 0, 0, 0);
+    font-family: 'Spartan', sans-serif;
+    font-size: 0.6em;
+}
+ .linkInicio:hover{
     color:white;
 }
-#divLink .link:hover{
-    transition: 0.3s;
+ .linkSobre:hover{
     color:white;
-    text-decoration-line: underline;
-    text-decoration-color: #00BD32;
     
+}
+ .linkProjeto:hover{
+    color:white;
+}
+ .linkContato:hover{
+    color:white;
 }
 
 
