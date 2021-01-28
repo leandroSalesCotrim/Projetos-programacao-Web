@@ -21,10 +21,7 @@
                     </form>
                 </div>
                 <div id = "divIcones">
-                    <div id = "divTelaCadastro">
-                      <a href = "../CodeStorm/loginCliente.php">
-                      <img id = "perfil" src = "../CodeStorm/img/icon/unnamed.png">
-                      <h1 id = "EntrarCadastrarTxt">Entrar | Cadastrar</h1></a></div>
+                    <div id = "divTelaCadastro"><a href = "../CodeStorm/loginCliente.php"><img id = "perfil" src = "../CodeStorm/img/icon/unnamed.png"><h1 id = "EntrarCadastrarTxt">Entrar | Cadastrar</h1></a></div>
                     <div id = "divCarrinho"><a href = "#"><img id = "carrinho" src = "../CodeStorm/img/icon/Cart.png"></a></div>
                 </div>
             </div>
@@ -32,7 +29,7 @@
                 <img src = "../CodeStorm/img/detalhe/moldeNav.png" id="moldeNav">
                 <div id = "linkTop">
                 <a href = "index.php" id = "link"><h1 id = "linkTxt">Inicio</h1></a>
-                <a href = "#" id = "link"><h1 id = "linkTxt">Destaques</h1></a>
+                <a href = "catalogo.php" id = "link"><h1 id = "linkTxt">Catálogo</h1></a>
                 <a href = "#" id = "link"><h1 id = "linkTxt">Descontos</h1></a>
                 <a href = "../CodeStorm/contato.php" id = "link"><h1 id = "linkTxt">Contato</h1></a>
                 </div>
@@ -44,7 +41,6 @@
                 </div>
             </div>
         </header>
-
         <div id  = "divBannerHome">  
          <img id="bannerHome" src="../CodeStorm/img/detalhe/BannerHome.png" alt="banner">
         </div>
@@ -56,39 +52,86 @@
             </div>
             <div id="divCards" >
             <div class="card" style="width: 15rem;">
-                <img class="card-img-top" src="../CodeStorm/img/perifericos/headset/gamer-razer-chroma.png" alt="Card image cap">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="../CodeStorm/img/perifericos/headset/gamer-razer-chroma.png" alt="Card image cap" style="width: 15rem;">
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="flip-text-card-one">
+                            <h1>R$ 1199,90</h1> 
+                        </div>
+                        <div class="flip-img-card">
+                            <img src="../CodeStorm/img/perifericos/headset/gamer-razer-chroma.png" alt="Card image cap" style="width: 15rem;">
+                        </div>
+                    </div>
+                  </div>
+                </div>
                 <div class="card-body">
                 <br>
                   <p class="card-title" class="titulo">Headset Gamer Razer Chroma</p>
-                  <a href="#" class="btn btn-primary">Verificar Produto</a>
+                  <a href="../CodeStorm/telas-produtos/periferico/headphonehazer.php" class="btn btn-primary">Verificar Produto</a>
                 </div>
               </div>
                 
               <div class="card" style="width: 15rem;">
-                <img class="card-img-top" src="../CodeStorm/img/computador/veneno.png" alt="Card image cap">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img style="width: 15rem;" src="../CodeStorm/img/computador/veneno.png" alt="Card image cap">
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="flip-img-card">
+                            <img style="width: 15rem;" src="../CodeStorm/img/computador/venenoHover.png" alt="Card image cap">
+                        </div>
+                    </div>
+                  </div>
+                </div>
                 <div class="card-body">
                   <p class="card-title" class="titulo">Core i7 9700f GeForce RTX 2070 8gb Super SSD M2 de 240GB</p>
-                  <a href="#" class="btn btn-primary">Verificar Produto</a>
+                  <a href="../CodeStorm/telas-produtos/computador/pcVeneno.php" class="btn btn-primary">Verificar Produto</a>
                 </div>
               </div>
                 
               <div class="card" style="width: 15rem;">
-                <img class="card-img-top" src="../CodeStorm/img/pecas/cpu/ryzen3.png" alt="Card image cap">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img style="width: 15rem;" src="../CodeStorm/img/pecas/cpu/ryzen5.png" alt="Card image cap">
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="flip-img-card">
+                            <img style="width: 15rem;" src="../CodeStorm/img/pecas/cpu/ryzen5Hover.png" alt="Card image cap">
+                        </div>
+                    </div>
+                  </div>
+                </div>
                 <div class="card-body">
                 <br>
                   <p class="card-title" class="titulo">Processador Ryzen 5 </p>
                   <br>
-                  <a href="#" class="btn btn-primary">Verificar Produto</a>
+                  <a href="../CodeStorm/telas-produtos/peca/cpuamd5.php" class="btn btn-primary">Verificar Produto</a>
                 </div>
               </div>
                 
               <div class="card" style="width: 15rem; ">
-                <img class="card-img-top" src="../CodeStorm/img/notebook/acerAspire.png" alt="Card image cap">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img style="width: 15rem;" src="../CodeStorm/img/notebook/acerAspire.png" alt="Card image cap">
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="flip-img-card">
+                            <img style="width: 15rem;" src="../CodeStorm/img/notebook/acerAspireHover.png" alt="Card image cap">
+                        </div>
+                    </div>
+                  </div>
+                </div>
                 <div class="card-body">
                 <br>
                   <p class="card-title" class="titulo">Aspire 3 ryzen 5 12 gb ram</p>
                   <br>
-                  <a href="#" class="btn btn-primary">Verificar Produto</a>
+                  <a href="../CodeStorm/telas-produtos/notebook/noteAcerAspire.php" class="btn btn-primary">Verificar Produto</a>
                 </div>
               </div>
             </div>
@@ -99,7 +142,18 @@
             </div>
             <div id="divCards" >
                 <div class="card" style="width: 15rem;">
-                    <img class="card-img-top" src="../CodeStorm/img/pecas/placaDeVideo/pny4.png" alt="Card image cap">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img style="width: 15rem;" src="../CodeStorm/img/pecas/placaDeVideo/pny4.png" alt="Card image cap">
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="flip-img-card">
+                            <img style="width: 15rem;" src="../CodeStorm/img/pecas/placaDeVideo/pny4Hover.png" alt="Card image cap">
+                        </div>
+                    </div>
+                  </div>
+                </div>
                     <div class = "divDesconto">
                     <h1 id = "descontotxt">10% de desconto</h1>
                   </div>
@@ -107,22 +161,47 @@
                 <br>
                       <p class="card-title" class="titulo">Gtx 1050 TI</p>
                       <br>
-                      <a href="#" class="btn btn-primary">Verificar Produto</a>
+                      <a href="../CodeStorm/telas-produtos/peca/pdvPny.php" class="btn btn-primary">Verificar Produto</a>
                     </div>
                   </div>
                   <div class="card" style="width: 15rem;">
-                    <img class="card-img-top" src="../CodeStorm/img/pecas/cooler/ingvarac332.png" alt="Card image cap">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img style="width: 15rem;" src="../CodeStorm/img/pecas/cooler/ingvarac332.png" alt="Card image cap">
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="flip-img-card">
+                            <img style="width: 15rem;" src="../CodeStorm/img/pecas/cooler/ingvarac332Hover.png" alt="Card image cap">
+                        </div>
+                    </div>
+                  </div>
+                </div>
                     <div class = "divDesconto">
                     <h1 id = "descontotxt">15% de desconto</h1>
                   </div>
                     <div class="card-body">
                 <br>
                       <p class="card-title" class="titulo">Base ventilada notebook 2 fãs</p>
-                      <a href="#" class="btn btn-primary">Verificar Produto</a>
+                      <a href="../CodeStorm/telas-produtos/peca/coolerIngvarac.php" class="btn btn-primary">Verificar Produto</a>
                     </div>
                   </div>
                   <div class="card" style="width: 15rem;">
-                    <img class="card-img-top" src="../CodeStorm/img/pecas/ram/hyperNot8.png" alt="Card image cap">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img style="width: 15rem;" src="../CodeStorm/img/pecas/ram/hyperNot8.png" alt="Card image cap">
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="flip-text-card-one">
+                            <h1>R$ 426,90</h1> 
+                        </div>
+                        <div class="flip-img-card">
+                            <img style="width: 15rem;" src="../CodeStorm/img/pecas/ram/hyperNot8.png" alt="Card image cap">
+                        </div>
+                    </div>
+                  </div>
+                </div>
                     <div class = "divDesconto">
                     <h1 id = "descontotxt">20% de desconto</h1>
                   </div>
@@ -130,11 +209,26 @@
                 <br>
                       <p class="card-title" class="titulo">Memoria ram hyperX 8GB</p>
                       <br>
-                      <a href="#" class="btn btn-primary">Verificar Produto</a>
+                      <a href="" class="btn btn-primary">Verificar Produto</a>
                     </div>
                   </div>
                   <div class="card" style="width: 15rem; ">
-                    <img class="card-img-top" src="../CodeStorm/img/perifericos/mouse/gamer-pichau.png" alt="Card image cap">
+                                    <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img style="width: 15rem;" src="../CodeStorm/img/perifericos/mouse/gamer-pichau.png" alt="Card image cap">
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="flip-text-card-one">
+                            <h1>R$ 129,90</h1> 
+                        </div>
+                        <div class="flip-img-card">
+                            <img style="width: 15rem;" src="../CodeStorm/img/perifericos/mouse/gamer-pichau.png" alt="Card image cap">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
                     <div class = "divDesconto">
                     <h1 id = "descontotxt">25% de desconto</h1>
                   </div>
@@ -142,7 +236,7 @@
                 <br>
                       <p class="card-title" class="titulo">Mouse Gamer RGB Pichau</p>
                       <br>
-                      <a href="#" class="btn btn-primary">Verificar Produto</a>
+                      <a href="../CodeStorm/telas-produtos/periferico/mousepichau.php" class="btn btn-primary">Verificar Produto</a>
                     </div>
                   </div>
                 </div>

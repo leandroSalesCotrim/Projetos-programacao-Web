@@ -21,7 +21,7 @@
         ?>
     </head>
     
-    <body id = "body_home">
+    <body>
     <?php
             include_once("valida-sentinela-adm.php");
         ?>
@@ -49,7 +49,7 @@
                 <a href = "index-area-restrita-adm.php" id = "link"><h1 id = "linkTxt">Inicio</h1></a>
                 <a href = "lista-clientes.php" id = "link"><h1 id = "linkTxt">Clientes</h1></a>
                 <a href = "form-cadastro-produto.php" id = "link"><h1 id = "linkTxt">Produtos</h1></a>
-                <a href = "#" id = "link"><h1 id = "linkTxt">Vendas</h1></a>
+                <a href = "catalogo-adm.php" id = "link"><h1 id = "linkTxt">Catálogo</h1></a>
                 </div>
                 <div id = "linkDown">
                 <a href = "../pecas.php" id = "link"><h1 id = "linkTxt2">Peças</h1></a>
@@ -66,41 +66,53 @@
                     <img class="imgD"src="../img/detalhe/detalheE.png">
                 </div>
                 <div class="meioDetalhe">
-                    <h4 class="meioDetalhetTxt">LISTA DE CLIENTES</h4>
+                    <h4 class="meioDetalhetTxt">CLIENTES CADASTRADOS</h4>
                 </div>
                 <div class="imgDetalhe2">
                     <img class="imgD"src="../img/detalhe/detalheD.png">
                 </div>
             </div>
+            <br>
+            <br>
             <center>
-            <table border='1' >
-            <thead>
-                <th id = "thTitulo">Código</th>
-                <th id = "thTitulo">Nome</th>
-                <th id = "thTitulo">E-mail</th>
-                <th id = "thTitulo">CPF</th>
-                <th id = "thTitulo">RG</th>
-            </thead>
+            <table class="table" >
+                        <thead class="thead-dark">
+                            <tr>
+                            <th scope="col" class="text_table">Código</th>
+                            <th scope="col" class="text_table">Nome Cliente</th>
+                            <th scope="col" class="text_table">Email</th>
+                            <th scope="col" class="text_table">CPF</th>
+                            <th scope="col" class="text_table">RG</th>
+                            </tr>
+                        </thead>
             <tbody>
                 <?php
                     foreach($lista as $linha){
                         echo "<tr>";
-                        echo "<td id = 'tdIdCLiente'>".$linha['idcliente']."</td>";
-                        echo "<td id = 'tdNomeCLiente'>".$linha['nomecliente']."</td>";
-                        echo "<td id = 'tdEmailCliente'>".$linha['emailcliente']."</td>";
-                        echo "<td id = 'tdNomeCLiente'>".$linha['cpfcliente']."</td>";
-                        echo "<td id = 'tdNomeCLiente'>".$linha['rgcliente']."</td>";
+                        echo "<th>".$linha['idcliente']."</th>";
+                        echo "<td>".$linha['nomecliente']."</td>";
+                        echo "<td>".$linha['emailcliente']."</td>";
+                        echo "<td>".$linha['cpfcliente']."</td>";
+                        echo "<td>".$linha['rgcliente']."</td>";
                         echo "</tr>";
                     }
                 ?>
             </tbody>
         </table>
         </center>
-            <br>
-            <br>
-            <br>
-            
-            <footer class="footer" id="footer-index">
+
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <hr>
+            <footer class="footer" id="footer">
+                
                 <div class="container-foot">
                     <div class="link-footer">
                         <br>
@@ -111,7 +123,7 @@
                         <a href="">Trabalhe Conosco</a>
                         <br>
                         <img src="../img/icon/icon-email.png">
-                        <a href="../contato.php">Entre em Contato</a>
+                        <a href="../CodeStorm/contato.php">Entre em Contato</a>
                         <br>
                         <img src="../img/icon/icon-eyeoff.png">
                         <a href="">Política de Privacidade</a>
@@ -134,6 +146,7 @@
                             </p>
                         </div>
                     </div>
+                    
                     <div class="social-footer">
                         <div class="cont-img-social">
                             <a href=""><img src="../img/icon/icon-twitter.png"></a>
@@ -144,7 +157,6 @@
                     </div>
                 </div>
             </footer>
-        </div>
-
+            
     </body>
 </html>  

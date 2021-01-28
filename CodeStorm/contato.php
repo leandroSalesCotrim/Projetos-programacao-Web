@@ -27,7 +27,7 @@
                 <img src = "../CodeStorm/img/detalhe/moldeNav.png" id="moldeNav">
                 <div id = "linkTop">
                 <a href = "index.php" id = "link"><h1 id = "linkTxt">Inicio</h1></a>
-                <a href = "#" id = "link"><h1 id = "linkTxt">Destaques</h1></a>
+                <a href = "catalogo.php" id = "link"><h1 id = "linkTxt">Catálogo</h1></a>
                 <a href = "#" id = "link"><h1 id = "linkTxt">Descontos</h1></a>
                 <a href = "../CodeStorm/contato.php" id = "link"><h1 id = "linkTxt">Contato</h1></a>
                 </div>

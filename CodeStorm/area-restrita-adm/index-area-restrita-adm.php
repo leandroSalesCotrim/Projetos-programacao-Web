@@ -39,7 +39,7 @@
                 <a href = "index-area-restrita-adm.php" id = "link"><h1 id = "linkTxt">Inicio</h1></a>
                 <a href = "lista-clientes.php" id = "link"><h1 id = "linkTxt">Clientes</h1></a>
                 <a href = "form-cadastro-produto.php" id = "link"><h1 id = "linkTxt">Produtos</h1></a>
-                <a href = "#" id = "link"><h1 id = "linkTxt">Vendas</h1></a>
+                <a href = "catalogo-adm.php" id = "link"><h1 id = "linkTxt">Catálogo</h1></a>
                 </div>
                 <div id = "linkDown">
                 <a href = "../pecas.php" id = "link"><h1 id = "linkTxt2">Peças</h1></a>

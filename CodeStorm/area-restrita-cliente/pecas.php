@@ -9,13 +9,16 @@
         <link href = "../img/icon/CodeStormIcone.png" rel="icon">
     </head>
     <body id = "body_home">
-        <header id = "nav">
+    <?php
+            include_once("valida-sentinela-cliente.php");
+        ?>
+            <header id = "nav">
             <div id = "navTop">
                 <div id = "divLogo"><img src = "../img/icon/CodeStormLogo.png" id = "logo"></div>
                 <div class="barra-pesquisa">
                     <form class="form-inline my-0 my-lg-0">
                       <input type="search" class="form-control form-control-sm" id="colFormLabelSm" placeholder="Escreva aqui o que deseja buscar em nossa loja ♥">
-                    <button type="submit" class="btn-sm btn-primary "id="btn-index-pesquisa">Pesquisar</button>
+                    <button type="submit" class="btn-sm btn-primary" id="btn-index-pesquisa">Pesquisar</button>
                     </form>
                 </div>
                 <div id = "divIcones">
@@ -32,7 +35,7 @@
                 <img src = "../img/detalhe/moldeNav.png" id="moldeNav">
                 <div id = "linkTop">
                 <a href = "index-area-restrita-cliente.php" id = "link"><h1 id = "linkTxt">Inicio</h1></a>
-                <a href = "#" id = "link"><h1 id = "linkTxt">Destaques</h1></a>
+                <a href = "../catalogo-cliente.php" id = "link"><h1 id = "linkTxt">Catálogo</h1></a>
                 <a href = "#" id = "link"><h1 id = "linkTxt">Descontos</h1></a>
                 <a href = "contato.php" id = "link"><h1 id = "linkTxt">Contato</h1></a>
                 </div>
@@ -62,32 +65,65 @@
             <div class="linha1">
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/cooler/ingvarac332.png" alt="Imagem de capa do card">
-                        <div class="card-body">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/cooler/ingvarac332.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/cooler/ingvarac332Hover.png" alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                        <div class="card-body" >
                             <h5 class="card-title">Warrior AC332 Ingvar Gamer LED </h5>
                             <p class="preco"  id="preco">Por: R$ 144,90 <br>ou até 4x de R$ 36,23 sem juros</p>
-                            <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/coolerIngvarac.php" id="comprar"  class="btn btn-primary">Comprar</a>
 
                         </div>
                     </div>
                 </div>
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/cooler/multilaserac06.png" alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/cooler/multilaserac06.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/cooler/multilaserac06Hover.png"alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                             <h5 class="card-title">Power Cooler Gamer Led - Multilaser </h5>
                             <p class="preco" id="preco">Por R$ 104,99 <br>ou até 3x R$ 35,00 sem juros </p>
-                            <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/coolerMulti.php" id="comprar"  class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/cooler/mymax.png" alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/cooler/mymax.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/cooler/mymaxHover.png"alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                             <h5 class="card-title">Cooler Mymax Processador Intel Socket</h5>
                             <p class="preco"  id="preco">Por: R$ 40,00 <br>ou até 10x de R$2 0,00 sem juros</p>
-                            <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/coolerMyMax.php" id="comprar"  class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -95,11 +131,22 @@
             <div class="linha2">
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/cooler/segotep.png" class="card-img-top"  alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/cooler/segotep.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/cooler/segotepHover.png"alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                             <h5 class="card-title">Cooler Fan Gamer Lighting RGB 12 Segotep</h5>
                             <p class="preco"  id="preco">Por: R$ 67,75 <br>ou até 2x de R$ 33,88 sem juros</p>
-                            <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/coolerSegotep.php" id="comprar"  class="btn btn-primary">Comprar</a>
 
 
                         </div>
@@ -107,21 +154,43 @@
                 </div>
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/cooler/hyper.png" alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/cooler/hyper.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/cooler/hyperHover.png"alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">Cooler Master Hyper Intel/AMD </h5>
                             <p class="preco"  id="preco">Por R$ 194,90 <br>ou até 6x sem juros de R$ 32,48</p>
-                            <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/coolerHyper.php" id="comprar"  class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/cooler/gamemax.png" alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/cooler/gamemax.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/cooler/gamemaxHover.png"alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">Cooler Gabinete Gamer LED Gamemax</h5>
                             <p class="preco"  id="preco">Por: R$ 41,86 <br>ou até 2x sem juros de R$ 20,93</p>
-                            <a href="#" id="comprar" class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/coolerGameMax.php" id="comprar" class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -131,31 +200,64 @@
         <div class="linha3">
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/hd/seagate10tb.png" alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/hd/seagate10tb.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/hd/seagate10tb.png"alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">HD 10TB SATA Seagate IronWolf PRO</h5>
                             <p class="preco"  id="preco">Por: R$ 3.582,34 <br>ou até 10x de R$ 358,23 sem juros</p>
-                            <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/hdSeagateIronWolf.php" id="comprar"  class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/hd/seagate1tbex.png"  alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/hd/seagate1tbex.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/hd/seagate1tbex.png"alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">HD Externo Portátil 1 TB USB</h5>
                             <p class="preco"  id="preco">Por: R$ 315,00 <br>ou até 6x de R$52,50 sem juros</p>
-                            <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/hdSeagate1t.php" id="comprar"  class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/hd/seagate4tb.png" alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/hd/seagate4tb.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/hd/seagate4tb.png"alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">HD Interno PC Seagate 4TB</h5>
                             <p class="preco"  id="preco">Por: R$ 1.278,24  <br>ou até 12x de 106,52 sem juros</p>
-                            <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/hdSeagateGreen.php" id="comprar"  class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -163,11 +265,22 @@
             <div class="linha4">
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/hd/western1tbex.png"  alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/hd/western1tbex.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/hd/western1tbex.png"alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                             <h5 class="card-title">HD Externo Portátil Western Elements 1 TB</h5>
                             <p class="preco"  id="preco">Por: R$ 429,75 <br>ou até 8x de R$53,72 sem juros</p>
-                            <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/hdWesternPortatil.php" id="comprar"  class="btn btn-primary">Comprar</a>
 
 
                         </div>
@@ -175,21 +288,43 @@
                 </div>
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/hd/western2tb.png" alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/hd/western2tb.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/hd/western2tb.png"alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">HD 2TB SATA3 Western Digital RE Enterprise </h5>
                             <p class="preco"  id="preco">Por:  R$ 1.235,28 <br>ou até 10x de R$ 123,53 sem juros</p>
-                            <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/hdWesternRE.php" id="comprar"  class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/hd/western500gb.png" alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/hd/western500gb.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/hd/western500gb.png"alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">HD Interno Desktop Western Digital 500GB</h5>
                             <p class="preco"  id="preco">Por: R$ 189,90 <br>ou até 2x de R$ 94,95 sem juros</p>
-                            <a href="#" id="comprar" class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/hdWesternBlue.php" id="comprar" class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -199,31 +334,64 @@
         <div class="linha5">
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/placa/asrock1150.png" alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/placa/asrock1150.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/placa/asrock1150Hover.png"alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">Placa Mãe ASRock P/ Intel LGA</h5>
                             <p class="preco"  id="preco">Por: R$ 560,00 <br>ou até 12x de R$ 46,66 sem juros</p>
-                            <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/placaasrock1150.php" id="comprar"  class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/placa/asrockh310.png"  alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/placa/asrockh310.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/placa/asrockh310Hover.png"alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">Placa Mãe AsRock H310CM-HG4</h5>
                             <p class="preco"  id="preco">Por: R$ 687,38 <br>ou até 8x de R$ 85,93 sem juros</p>
-                            <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/placagigabyte.php" id="comprar"  class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/placa/asusb450.png"  alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/placa/asusb450.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/placa/asusb450Hover.png"alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">Placa Mãe Asus Prime B450M Gaming</h5>
                             <p class="preco"  id="preco">Por: R$ 669,00 <br>ou até 10x de R$ 66,90 sem juros</p>
-                            <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/placaAsus450.php" id="comprar"  class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -231,11 +399,22 @@
             <div class="linha6">
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/placa/gigabyteh110m.png"  alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/placa/gigabyteh110m.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/placa/gigabyteh110mHover.png"alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                             <h5 class="card-title">Placa Mãe H110M-S2H Gigabyte</h5>
                             <p class="preco"  id="preco">Por: R$ 589,00 <br>ou até 10x de R$ 58,90 sem juros</p>
-                            <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/placaasrockh110.php" id="comprar"  class="btn btn-primary">Comprar</a>
 
 
                         </div>
@@ -243,21 +422,43 @@
                 </div>
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/placa/gigabytex299.png"  alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/placa/gigabytex299.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/placa/gigabytex299Hover.png"alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">Placa Mãe Gigabyte Aorus Master</h5>
                             <p class="preco"  id="preco">Por: R$ 3.776,61 <br>ou até 10x de R$ 377,66 sem juros</p>
-                            <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/placaintel299.php" id="comprar"  class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/placa/gigayteA320.png"  alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/placa/gigayteA320.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/placa/gigayteA320Hover.png"alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">Placa Mãe Gigabyte A320M S2H AM4</h5>
                             <p class="preco"  id="preco">Por: R$ 599,88  <br>ou até 12x de R$ 49,99 sem juros</p>
-                            <a href="#" id="comprar" class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/placaGigabyte320.php" id="comprar" class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -267,31 +468,64 @@
         <div class="linha7">
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/placaDeVideo/galax4.png"  alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/placaDeVideo/galax4.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/placaDeVideo/galax4Hover.png" alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">Placa de video geforce gtx1650</h5>
                             <p class="preco"  id="preco">Por: R$ 1.799,00  <br>ou até 10x de R$ 179,90 sem juros</p>
-                            <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/pdvNvidia.php" id="comprar"  class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/placaDeVideo/geforce2.png"  alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/placaDeVideo/geforce2.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/placaDeVideo/geforce2.png" alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">Asus GeForce GTX 1050 Phoenix</h5>
                             <p class="preco"  id="preco">R$ 969,99  <br>ou até 10x de R$ 97,00 sem juros</p>
-                            <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                            <a href="../CodeStorm/telas-produtos/peca/pdvGeforce2.php" id="comprar"  class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/placaDeVideo/pny4.png"  alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/placaDeVideo/pny4.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/placaDeVideo/pny4Hover.png" alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">Geforce PNY GTX Performance Nvidia</h5>
                             <p class="preco"  id="preco">Por: R$ 874,15  <br>ou até 8x de R$ 109,27 sem juros</p>
-                            <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/pdvPny.php" id="comprar"  class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -299,11 +533,22 @@
             <div class="linha8">
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/placaDeVideo/gigabyte2.png"   alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/placaDeVideo/gigabyte2.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/placaDeVideo/gigabyte2Hover.png" alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
-                            <h5 class="card-title">Monitor para PC LG "21,5” LED - Widescreen Full HD</h5>
+                            <h5 class="card-title">Placa de Vídeo GigaByte NVIDIA GT710 2GB 64bits</h5>
                             <p class="preco"  id="preco">Por: R$ 599,00 <br>ou até 10x de R$ 59,90 sem juros</p>
-                            <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/pdvGigabyte2.php" id="comprar"  class="btn btn-primary">Comprar</a>
 
 
                         </div>
@@ -311,21 +556,43 @@
                 </div>
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/placaDeVideo/gigabyte8.png"   alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/placaDeVideo/gigabyte8.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/placaDeVideo/gigabyte8Hover.png" alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">Placa de Vídeo NV RTX 2060 8GB Gigabyte</h5>
                             <p class="preco"  id="preco">Por: R$ 3.849,00 <br>ou até 10x de R$ 384,90 sem juros</p>
-                            <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/pdvGigabyte.php" id="comprar"  class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/placaDeVideo/nvidia4.png"  alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/placaDeVideo/nvidia4.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/placaDeVideo/nvidia4Hover.png" alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">Placa de Vídeo Gigabyte GeForce GTX 1650</h5>
                         <p class="preco"  id="preco">Por: R$ 2.025,00 <br>ou até 10x de R$ 202,50 sem juros</p>
-                            <a href="#" id="comprar" class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/pdvNVidia4.php" id="comprar" class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -335,31 +602,64 @@
         <div class="linha9">
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/cpu/core13.png"  alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/cpu/core13.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/cpu/core13Hover.png" alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">Processador Intel Core i3-9100F</h5>
                         <p class="preco"  id="preco">Por: R$ 599,90<br>ou até 10x de R$ 59,99 sem juros</p>
-                            <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/cpucorei3.php" id="comprar"  class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/cpu/core5.png"   alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/cpu/core5.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="..img/pecas/cpu/core5Hover.png" alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">Processador Intel Core i5-7400 </h5>
                         <p class="preco"  id="preco">Por: R$ 1.886,89 <br>ou até 10x de R$ 188,69 sem juros</p>
-                            <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/cpuinteli5.php" id="comprar"  class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/cpu/core7.png"  alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/cpu/core7.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/cpu/core7Hover.png" alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">Processador Intel Core i7-8700 </h5>
                         <p class="preco"  id="preco">Por: R$ 2.349,00 <br>ou até 10x de R$ 234,90 sem juros</p>
-                            <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/cpucorei7.php" id="comprar"  class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -367,11 +667,22 @@
             <div class="linha10">
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/cpu/pentiumgold.png"   alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/cpu/pentiumgold.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/cpu/pentiumgoldHover.png" alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                             <h5 class="card-title">Processador Intel Pentium Gold G5400</h5>
                             <p class="preco"  id="preco">Por: R$ 465,90 <br>ou até 2x de 44,95 sem juros</p>
-                            <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/cpuryzen3.php" id="comprar"  class="btn btn-primary">Comprar</a>
 
 
                         </div>
@@ -379,21 +690,43 @@
                 </div>
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/cpu/ryzen3.png"    alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/cpu/ryzen3.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/cpu/ryzen3Hover.png" alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
-                        <h5 class="card-title">Processador AMD Ryzen 9 3900X 12 Cores</h5>
+                        <h5 class="card-title">Processador AMD Ryzen 3 3900X 12 Cores</h5>
                             <p class="preco"  id="preco">Por: R$ 4.374,01 <br>ou até 10x de R$ 437,40 sem juros</p>
-                            <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/cpuryzen9.php" id="comprar"  class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/cpu/ryzen5.png"  alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/cpu/ryzen5.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/cpu/ryzen5Hover.png" alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">Processador am4 ryzen 5 2600 6 core</h5>
                             <p class="preco"  id="preco">Por: R$ 1.099,00 <br>ou até 10x de R$ 109,90 sem juros</p>
-                            <a href="#" id="comprar" class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/cpuamd5.php" id="comprar" class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -403,32 +736,65 @@
         <div class="linha11">
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/ram/adata8.png"   alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/ram/adata8.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/ram/adata8.png" alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">Memória 8GB DDR4 Adata XPG Spectrix RGB</h5>
                         <p class="preco"  id="preco">Por: R$ 454,45 <br>ou até 10x de R$ 45,45 sem juros</p>
-                        <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                        <a href="../telas-produtos/peca/ramAdata8.php" id="comprar"  class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/ram/corsair16.png"   alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/ram/corsair16.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/ram/corsair16.png" alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">Memória DDR4 - Corsair Vengeance LPX Black</h5>
                         <p class="preco"  id="preco">Por: R$ 1.198,22<br>ou até 10x de R$ 119,82 sem juros</p>
                         
-                        <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                        <a href="../telas-produtos/peca/ramcorsair16.php" id="comprar"  class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/ram/corsair2x16.png"  alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/ram/corsair2x16.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/ram/corsair2x16.png" alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">Memória DDR4 Corsair Vengeance RGB Pro</h5>
                         <p class="preco"  id="preco">Por: R$ 2.408,82 <br>ou até 10x de R$ 240,88 sem juros</p>
-                            <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/ramcorse216.php" id="comprar"  class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -436,11 +802,22 @@
             <div class="linha12">
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/ram/corsairNot8.png"    alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/ram/corsairNot8.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/ram/corsairNot8.png" alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                             <h5 class="card-title">Memória Notebook DDR4 - Corsair</h5>
                             <p class="preco"  id="preco">Por: R$ 531,16 <br>ou até 10x de R$ 53,12 sem juros</p>
-                            <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/ramcorss8.php" id="comprar"  class="btn btn-primary">Comprar</a>
 
 
                         </div>
@@ -448,21 +825,43 @@
                 </div>
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/ram/geil8.png"     alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/ram/geil8.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/ram/geil8.png" alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">Memória 8GB DDR4 Geil Super Luce RGB</h5>
                         <p class="preco"  id="preco">Por: R$ 554,24 <br>ou até 10x de R$ 55,42 sem juros</p>
-                        <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                        <a href="../telas-produtos/peca/ramgeil8.php" id="comprar"  class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/ram/hyperNot8.png"  alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/ram/hyperNot8.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/ram/hyperNot8.png" alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">Memória 8GB Gamer Hyperx Kingston DDR4</h5>
                         <p class="preco"  id="preco">Por: R$ 498,00 <br>ou até 10x de R$ 49,80 sem juros</p>
-                            <a href="#" id="comprar" class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/ramhyper.php" id="comprar" class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -472,31 +871,64 @@
         <div class="linha13">
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/ssd/adata120.png"   alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/ssd/adata120.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/ssd/adata120.png" alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">SSD Ultimate 120GB Adata ASU650SS</h5>
                         <p class="preco"  id="preco">Por: R$ 250,90 <br>ou até 8x de R$ 31,36 sem juros</p>
-                        <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                        <a href="../telas-produtos/peca/ssdUltimate.php" id="comprar"  class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/ssd/adata240ex.png"   alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/ssd/adata240ex.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/ssd/adata240ex.png" alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">SSD 240gb externo usb 3.2 ADATA </h5>
                         <p class="preco"  id="preco">Por: R$ 399,00 <br>ou até 10x de R$ 39,90 sem juros</p>
-                        <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                        <a href="../telas-produtos/peca/ssdAdata240.php" id="comprar"  class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/ssd/kingston120gb.png"  alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/ssd/kingston120gb.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/ssd/kingston120gb.png" alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">SSD Kingston 2.5” 120GB A400</h5>
                         <p class="preco"  id="preco">Por: R$ 218,90 <br>ou até 5x de R$ 43,78 sem juros</p>
-                            <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/ssdKingston.php" id="comprar"  class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -504,11 +936,22 @@
             <div class="linha14">
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/ssd/pichau256.png"     alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/ssd/pichau256.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/ssd/pichau256.png" alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                             <h5 class="card-title">SSD Pichau Gaming 256GB 2.5” Sata</h5>
                             <p class="preco"  id="preco">Por: R$ 425,73 <br>ou até 10x de R$ 42,57 sem juros</p>
-                            <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                            <a href="../telas-produtos/peca/ssdPichau.php" id="comprar"  class="btn btn-primary">Comprar</a>
 
 
                         </div>
@@ -516,32 +959,54 @@
                 </div>
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/ssd/pny120.png"  alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/ssd/pny120.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/ssd/pny120.png" alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">SSD Pny 120gb 515mb/s 2.5 Sata</h5>
                         <p class="preco"  id="preco">Por: R$ 234,90<br>ou até 7x de R$ 33,56 sem juros</p>
-                        <a href="#" id="comprar"  class="btn btn-primary">Comprar</a>
+                        <a href="../telas-produtos/peca/ssdPny.php" id="comprar"  class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="coluna">
                     <div id="card" class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="../img/pecas/ssd/sandisk120.png"  alt="Imagem de capa do card">
+                    <div class="flip-card" style="width: 18rem;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" >
+                          <img style="width: 15rem;" src="../img/pecas/ssd/sandisk120.png" alt="Card image cap">
+                        </div>
+                        <div class="flip-card-back" >
+                            <div class="flip-img-card">
+                                <img style="width: 15rem;" src="../img/pecas/ssd/sandisk120.png" alt="Card image cap">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                         <div class="card-body">
                         <h5 class="card-title">SSD Plus 120GB Sandisk SDSSDA-120G-G27</h5>
                         <p class="preco"  id="preco">Por: R$ 272,90<br>ou até 9x de R$ 30,32 sem juros</p>
-                        <a href="#" id="comprar" class="btn btn-primary">Comprar</a>
+                        <a href="../telas-produtos/peca/ssdSandisk.php" id="comprar" class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-                    <footer class="footer" id="footer">
+        <footer class="footer" id="footer">
                 <div class="container-foot">
                     <div class="link-footer">
                         <br>
                         <img src="../img/icon/icon-info.png">
-                        <a href="">Sobre a</a>
+                        <a href="">Sobre a CodeStorm</a>
                         <br>
                         <img src="../img/icon/icon-bag.png">
                         <a href="">Trabalhe Conosco</a>
@@ -563,7 +1028,7 @@
                             <img src="../img/icon/icon-map.png">
                         </div>
                         <div class="text-endereco">
-                            <p<br>
+                            <p>CodeStorm<br>
                             R. Júlio Guetardilho, 90<br>
                             Próx. Praça do Lazaro - Candeias - Vila América, SP<br>
                             Seg. à sex. 10h - 16h. Sáb. 10h - 16h
@@ -573,7 +1038,7 @@
                     <div class="social-footer">
                         <div class="cont-img-social">
                             <a href=""><img src="../img/icon/icon-twitter.png"></a>
-                            <a href=""><img src="../img/icon/icon-youtube.png"></a>
+                            <a href=""><img src="..img/icon/icon-youtube.png"></a>
                             <a href=""><img src="../img/icon/icon-instagram.png"></a>
                             <a href=""><img src="../img/icon/iconfacebook.png"></a>
                         </div>

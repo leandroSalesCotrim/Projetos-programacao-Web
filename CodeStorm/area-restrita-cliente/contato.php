@@ -9,19 +9,22 @@
             <link href = "../img/icon/CodeStormIcone.png" rel="icon">
     </head>
     <body>
-        <header id = "nav">
+    <?php
+            include_once("valida-sentinela-cliente.php");
+        ?>
+    <header id = "nav">
             <div id = "navTop">
                 <div id = "divLogo"><img src = "../img/icon/CodeStormLogo.png" id = "logo"></div>
                 <div class="barra-pesquisa">
                     <form class="form-inline my-0 my-lg-0">
                       <input type="search" class="form-control form-control-sm" id="colFormLabelSm" placeholder="Escreva aqui o que deseja buscar em nossa loja ♥">
-                    <button type="submit" class="btn-sm btn-primary "id="btn-index-pesquisa">Pesquisar</button>
+                    <button type="submit" class="btn-sm btn-primary" id="btn-index-pesquisa">Pesquisar</button>
                     </form>
                 </div>
                 <div id = "divIcones">
                     <div id = "divTelaCadastro">
-                    <img id = "perfil" src = "../img/icon/unnamed.png">
-                    <h1 id = "EntrarCadastrarTxt">Bem vindo, Cliente<p>
+                        <img id = "perfil" src = "../img/icon/unnamed.png">
+                        <h1 id = "EntrarCadastrarTxt">Bem vindo, Cliente<p>
                         <a href="../logout.php" >Sair</p></h1>
                     <br>
                     </div>
@@ -32,7 +35,7 @@
                 <img src = "../img/detalhe/moldeNav.png" id="moldeNav">
                 <div id = "linkTop">
                 <a href = "index-area-restrita-cliente.php" id = "link"><h1 id = "linkTxt">Inicio</h1></a>
-                <a href = "#" id = "link"><h1 id = "linkTxt">Destaques</h1></a>
+                <a href = "../catalogo-cliente.php" id = "link"><h1 id = "linkTxt">Catálogo</h1></a>
                 <a href = "#" id = "link"><h1 id = "linkTxt">Descontos</h1></a>
                 <a href = "contato.php" id = "link"><h1 id = "linkTxt">Contato</h1></a>
                 </div>

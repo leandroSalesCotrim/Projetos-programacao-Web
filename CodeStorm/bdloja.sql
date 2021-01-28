@@ -76,9 +76,7 @@ CREATE TABLE `tbproduto` (
 --
 
 INSERT INTO `tbproduto` (`idproduto`, `descproduto`, `valorproduto`, `qtdeproduto`, `fotoproduto`) VALUES
-(6, 'sapato de salto alto', 120, 100, 'images/produto/6.jpg'),
-(7, 'Tenis de jeans', 130, 80, 'images/produto/7.jpg'),
-(8, 'sapato rosa', 80, 50, 'images/produto/8.jpg');
+
 
 -- --------------------------------------------------------
 
