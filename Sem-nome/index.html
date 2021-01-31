@@ -8,6 +8,7 @@
     <!-- Fonte utilizada -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
     <!-- Meu CSS e CSS do bootstrap -->
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -19,13 +20,16 @@
 </head>
 <body id="body">
 
-    <header id="header">
+    <header id="header" class="container-fluid">
 
-            <div id="divMenu">
-                    
-                <div id="divLogo">
-                    <img  id="logo" src="img/ArisLogo-Leandro.png">
+            <div id="divMenu" class="divMenu row align-items-start" >
+                   
+                <div id="divLogo" class="col animate__backInDown">
+                    <div id="divFundo" class="logo-blink">
+                    </div> 
+                    <img  id="logo" src="img/logoRaio.png">
                 </div>
+                
 
                 <div id="divLink">
                     <h1><a href="#inicioSec" id="linkInicio" class="linkInicio">Inicio</a></h1>
@@ -38,39 +42,26 @@
 
     </header>
 
-    <section id="inicioSec">
-        <br><br><br><br>
-            <h1>Inicio</h1>
-            <h1>Inicio</h1>
-            <h1>Inicio</h1>
-            <h1>Inicio</h1>
-            <h1>Inicio</h1>
-            <h1>Inicio</h1>
-            <h1>Inicio</h1>
-            <h1>Inicio</h1>
-            <h1>Inicio</h1>
-            <h1>Inicio</h1>
-            <h1>Inicio</h1>
-            <h1>Inicio</h1>
-            <h1>Inicio</h1>
-            <h1>Inicio</h1>
-            <h1>Inicio</h1>
-            <h1>Inicio</h1>
-            <h1>Inicio</h1>
-            <h1>Inicio</h1>
-            <h1>Inicio</h1>
-            <h1>Inicio</h1>
-            <h1>Inicio</h1>
-            <h1>Inicio</h1>
-            <h1>Inicio</h1>
-            <h1>Inicio</h1>
-            <h1>Inicio</h1>
-            <h1>Inicio</h1>
-            <h1>Inicio</h1>
-            <h1>Inicio</h1>
-            <h1>Inicio</h1>
-            <h1>Inicio</h1>
-        </section>
+    <br><br><br><br>
+    <section id="inicioSec" >
+            <div id="divConteudoInicio" >
+                <div id="divTextoInicio" class="container-fluid">
+                        <h1 id="tituloTxtInicio" class="col">Nome da empresa</h1>
+
+                        <hr id="hrInicio1">
+                        <hr id="hrInicio2">
+                        
+                        <h3  id="subTituloTxtInicio" class="col">Frase da empresa</h3>
+                </div>
+
+                <div id="divSobreposicao" class=""></div>
+                
+                <div id="divImgInicio" >
+                    <img id="imgInicio" class="col" src="img/light-bulbs-5488573_1920.jpg" alt="">
+                </div>
+            </div>
+    </section>
+        <br><br><br><br><br>
         <section  id="projetosSec" >
             <h1>Projetos</h1>
             <h1>Projetos</h1>
@@ -176,6 +167,10 @@
             <h1>Contatos</h1>
             <h1>Contatos</h1>
         </section>
-<button id="btnTop" onclick="subir()" class="btn animate__backInRight"><img id="imgBtnTop"src="img/btnTop.png"></button>
-</body>
+        <button id="btnTop" onclick="subir()" class="btn animate__backInRight">
+            <img id="imgBtnTop"src="img/btnTop.png">
+            <div id="divFundoBtn" class="btnTop-blink">
+            </div>
+        </button>
+    </body>
 </html>

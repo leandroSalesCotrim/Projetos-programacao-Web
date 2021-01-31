@@ -1,36 +1,64 @@
 #body{
-    background-color: rgb(19, 19, 19);
+    background-color: #0D0D0D;
+    font-size: 16px;
 }
 
 /*Menu*/
 #divMenu{
-    background-color:#1802db;
     position: fixed;
     width: 100%;
     height: 6em;
+    z-index: 4;
 }
 #divLogo{
     height: 100%;
-    width: 6em;
-    margin-left: 8%;
+    margin-left: 5%;
+    max-width: 20%;
     float: left;
     position: relative;
+    animation-duration: 0.7s;
 }
+#divFundo{
+    height: 70%;
+    width: 20%;
+    top: 15%;
+    left: 3%;
+    position: absolute;
+    filter: blur(1.5em);
+    opacity: 0.6;
+    background-color: #F2CB05;
+}
+
 #logo{
     width: auto;
     height: 100%;
 }
-
+@keyframes logo-blink {
+    0% { opacity: 0; }
+    15% { opacity: 1; }
+    30% { opacity: 0; }
+    45% { opacity: 0; }
+    60% { opacity: 0; }
+    75% { opacity: 1; }
+    95% { opacity: 0; }
+    100% { opacity: 0.5; }
+}
+.logo-blink {
+  -webkit-animation: logo-blink .65s linear;
+  -moz-animation: logo-blink .65s linear;
+  -ms-animation: logo-blink .65s linear;
+  -o-animation: logo-blink .65s linear;
+  animation: logo-blink .65s linear;
+  animation-delay: 0.7s;
+}
 #divLink{
-    width:70%;
+    width:60%;
     height: auto;
-    float: right;
-    
 }
 .linkInicio  {
     color: white;
-    margin-left: 9%;
-    margin-top: 2em;
+    margin-left: 8%;
+    margin-top: 1em;
     float: left;
     text-decoration: none;
     font-family: 'Spartan', sans-serif;
@@ -38,9 +66,9 @@
 }
  .linkContato   {
     color: white;
-    margin-top: 1.6em;
+    margin-top: 0.60em;
     float: left;
-    padding-left: 9%;
+    padding-left: 8%;
     text-decoration: none;
     text-decoration-color: rgba(0, 0, 0, 0);
     font-family: 'Spartan', sans-serif;
@@ -48,8 +76,8 @@
 }
  .linkSobre   {
     color: white;
-    margin-top: 1.6em;
-    padding-left: 9%;
+    margin-top: 0.606em;
+    padding-left: 8%;
     float: left;
     text-decoration: none;
     text-decoration-color: rgba(0, 0, 0, 0);
@@ -58,8 +86,8 @@
 }
  .linkProjeto   {
     color: white;
-    margin-top: 1.6em;
-    padding-left: 9%;
+    margin-top: 0.60em;
+    padding-left: 8%;
     float: left;
     text-decoration: none;
     text-decoration-color: rgba(0, 0, 0, 0);
@@ -86,28 +114,131 @@
     right: 4%;
     border: none;
     border-radius: 50%;
-    background-color: #00BD32;
+    background-color: #F2CB05;
     outline: none;
     width: 4em;
     height: 4em;
     display: none;
+    z-index: 1;
 }
 #imgBtnTop{
-    width: 60%;
-    height: 60%;
+    width: 50%;
+    height: 50%;
+    margin-left: -0.9em;
+    margin-top: -1em;
+    position: absolute;
+    z-index: 1;
+
+}
+#divFundoBtn{
+    height: 100%;
+    width: 4em;
+    margin-top: -2em;
+    margin-left: -0.7em;
+    filter: blur(1.5em);
+    opacity: 0.6;
+    background-color: #F2CB05;
+    position: absolute;
+}
+@keyframes btnTop-blink {
+    0% { opacity: 0; }
+    10% { opacity: 0.2; }
+    20% { opacity: 0.8; }
+    30% { opacity: 0.1; }
+    40% { opacity: 0.9; }
+    50% { opacity: 0; }
+    60% { opacity: 0; }
+    70% { opacity: 0; }
+    80% { opacity: 0.1; }
+    90% { opacity: 0.2; }
+    93% { opacity: 0.3; }
+    95% { opacity: 0.4; }
+    98% { opacity: 0.5; }
+    100% { opacity: 0.6; }
+}
+.btnTop-blink {
+  -webkit-animation: btnTop-blink .65s linear;
+  -moz-animation: btnTop-blink .65s linear;
+  -ms-animation: btnTop-blink .65s linear;
+  -o-animation: btnTop-blink .65s linear;
+  animation: btnTop-blink .65s linear;
+  animation-delay: 0.7s;
 }
 
-  }
+  
 /*Formatação do Scroll*/
 ::-webkit-scrollbar-track {
-    background-color:#8A0005;
+    background-color:#0D0D0D;
 }
 ::-webkit-scrollbar {
     width: 7px;
-    background: #3D1214;
+    background: #F2CB05;
 }
 ::-webkit-scrollbar-thumb {
-    background: #8A0005;
+    background: #404040;
+}
+/*Conteudo do inicio*/
+#divConteudoInicio{
+    width: 100% ;
+    height: 100%;
+    position: absolute ;
 }
 
+#divSobreposicao{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.5;
+}
+#divImgInicio{
+    width: 100%;
+    height: 100%;
+}
 
+#imgInicio{
+    width: 100%;
+    height: 100%;
+}
+
+#divTextoInicio{
+    width: 70%;
+    height: 25%;
+    margin: 0 auto;
+    margin-left: 15%;
+    margin-top: 25%;
+    position: absolute;
+    z-index: 3;
+}
+
+#tituloTxtInicio{
+    font-family: 'Josefin Sans', sans-serif;
+    width: auto;
+    text-align: center;
+    color: #F2CB05;
+}
+
+#subTituloTxtInicio{
+    font-family: 'Spartan', sans-serif;
+    text-align: center;
+    color: white;
+}
+#hrInicio1{
+    width: 60%;
+    height: 2%;
+    margin: 0 auto;
+    background-color: #F2CB05;
+    opacity: 1;
+    z-index: 5;
+}
+#hrInicio2{
+    width: 60%;
+    height: 2%;
+    margin: 0 auto;
+    margin-left: 20%;
+    background-color: white;
+    opacity: 0.4;
+    position: absolute;
+    filter: blur(10px);
+}
