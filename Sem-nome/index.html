@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt=br">
 <head>
+    
     <title>Sem Titulo</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,59 +10,70 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+    
     <!-- Meu CSS e CSS do bootstrap -->
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
     <!-- Js utlizado -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 
+    <!-- Link da animação -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 </head>
 <body id="body">
-
     <header id="header" class="container-fluid">
 
-            <div id="divMenu" class="divMenu row align-items-start" >
+        <div id="divMenu" class="divMenu row align-items-start" >
                    
-                <div id="divLogo" class="col animate__backInDown">
-                    <div id="divFundo" class="logo-blink">
-                    </div> 
-                    <img  id="logo" src="img/logoRaio.png">
-                </div>
-                
+            <div id="divLogo" class="col animate__backInDown">
 
-                <div id="divLink">
-                    <h1><a href="#inicioSec" id="linkInicio" class="linkInicio">Inicio</a></h1>
-                    <h1><a href="#projetosSec" id="linkProjeto" class="linkProjeto">Projetos</a></h1>
-                    <h1><a href="#sobreSec" id="linkSobre" class="linkSobre">Sobre nós</a></h1>
-                    <h1><a href="#contatoSec" id="linkContato" class="linkContato">Contato</a></h1>
-                </div>
-            
+                    <div id="imgLogo">
+                        <div id="imgLogoFundo" class="logo-blink">
+                        </div>
+                    </div>
             </div>
+                
+            <nav id="navLink">
+                
+                <a href="#inicioSec" id="linkInicio" class="linkInicio nav-link">Inicio</a>
+                <a href="#projetosSec" id="linkProjeto" class="linkProjeto nav-link">Projetos</a>
+                <a href="#sobreSec" id="linkSobre" class="linkSobre nav-link">Sobre nós</a>
+                <a href="#contatoSec" id="linkContato" class="linkContato nav-link">Contato</a>
+
+            </nav>
+            
+        </div>
 
     </header>
-
-    <br><br><br><br>
     <section id="inicioSec" >
-            <div id="divConteudoInicio" >
-                <div id="divTextoInicio" class="container-fluid">
-                        <h1 id="tituloTxtInicio" class="col">Nome da empresa</h1>
+        
+            <div id="divConteudoInicio">
 
-                        <hr id="hrInicio1">
-                        <hr id="hrInicio2">
-                        
-                        <h3  id="subTituloTxtInicio" class="col">Frase da empresa</h3>
+                <div id="imgFundo">
+                    <div id="sobreFundo"></div>
                 </div>
 
-                <div id="divSobreposicao" class=""></div>
+                <div id="divTextoInicio">
+                    <h1 id="tituloTxtInicio" >Nome da empresa</h1>
+
                 
-                <div id="divImgInicio" >
-                    <img id="imgInicio" class="col" src="img/light-bulbs-5488573_1920.jpg" alt="">
+                    <hr id="hrInicio1">
+                
+                    <hr id="hrInicio2">
+                
+                    <h3  id="subTituloTxtInicio" >Frase da empresa</h3>
+                
                 </div>
-            </div>
+                
     </section>
-        <br><br><br><br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
         <section  id="projetosSec" >
             <h1>Projetos</h1>
             <h1>Projetos</h1>
@@ -172,5 +184,5 @@
             <div id="divFundoBtn" class="btnTop-blink">
             </div>
         </button>
-    </body>
+   </body>
 </html>

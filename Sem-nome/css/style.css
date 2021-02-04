@@ -1,37 +1,48 @@
 #body{
-    background-color: #0D0D0D;
-    font-size: 16px;
+    background-color:#0D0D0D;
+    
 }
 
 /*Menu*/
 #divMenu{
     position: fixed;
     width: 100%;
-    height: 6em;
+    height: 14.5%;
     z-index: 4;
+    background-color: #0d0d0d00;
 }
+    
 #divLogo{
     height: 100%;
-    margin-left: 5%;
-    max-width: 20%;
     float: left;
     position: relative;
     animation-duration: 0.7s;
 }
-#divFundo{
-    height: 70%;
-    width: 20%;
-    top: 15%;
-    left: 3%;
-    position: absolute;
-    filter: blur(1.5em);
-    opacity: 0.6;
-    background-color: #F2CB05;
-}
-
-#logo{
-    width: auto;
+#divConteudoLogo{
     height: 100%;
+    width: 25%;
+    position: relative;
+    margin:0 auto;
+    animation-duration: 0.7s;
+    background-color: honeydew;
+}
+#imgLogo{
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/logoRaio.png") ;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+#imgLogoFundo{
+    width: 100%;
+    height: 100%;
+    filter: blur(2vmax);
+    background-image: url("../img/logoRaio.png") ;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
 }
 @keyframes logo-blink {
     0% { opacity: 0; }
@@ -51,48 +62,46 @@
   animation: logo-blink .65s linear;
   animation-delay: 0.7s;
 }
-#divLink{
-    width:60%;
+#navLink{
+    width: 70%;
     height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .linkInicio  {
     color: white;
-    margin-left: 8%;
-    margin-top: 1em;
-    float: left;
+    margin-left:5%;
+    float:left;
     text-decoration: none;
     font-family: 'Spartan', sans-serif;
-    font-size: 0.48em;
+    font-size: 1.5vmax;
 }
  .linkContato   {
     color: white;
-    margin-top: 0.60em;
     float: left;
-    padding-left: 8%;
+    margin-left: 8%;
     text-decoration: none;
     text-decoration-color: rgba(0, 0, 0, 0);
     font-family: 'Spartan', sans-serif;
-    font-size: 0.48em;
+    font-size: 1.5vmax;
 }
  .linkSobre   {
     color: white;
-    margin-top: 0.606em;
-    padding-left: 8%;
+    margin-left: 8%;
     float: left;
     text-decoration: none;
     text-decoration-color: rgba(0, 0, 0, 0);
     font-family: 'Spartan', sans-serif;
-    font-size: 0.48em;
+    font-size: 1.5vmax;
 }
  .linkProjeto   {
     color: white;
-    margin-top: 0.60em;
-    padding-left: 8%;
+    margin-left: 8%;
     float: left;
     text-decoration: none;
     text-decoration-color: rgba(0, 0, 0, 0);
     font-family: 'Spartan', sans-serif;
-    font-size: 0.48em;
+    font-size: 1.5vmax;
 }
  .linkInicio:hover{
     color:white;
@@ -168,77 +177,87 @@
   
 /*Formatação do Scroll*/
 ::-webkit-scrollbar-track {
-    background-color:#0D0D0D;
+    background-color: #404040;
 }
 ::-webkit-scrollbar {
-    width: 7px;
+    width: 8px;
     background: #F2CB05;
 }
 ::-webkit-scrollbar-thumb {
-    background: #404040;
+    background: #F2CB05;
 }
+
+
 /*Conteudo do inicio*/
+#inicioSec{
+    height: 100vmax;
+    width: 100%;
+    background-size: cover;
+}
 #divConteudoInicio{
     width: 100% ;
     height: 100%;
-    position: absolute ;
+    position: absolute;
 }
-
-#divSobreposicao{
+#imgFundo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("../img/fundo.jpg") ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#sobreFundo{
     width: 100%;
     height: 100%;
     background-color: black;
-    position: absolute;
-    z-index: 1;
     opacity: 0.5;
-}
-#divImgInicio{
-    width: 100%;
-    height: 100%;
-}
-
-#imgInicio{
-    width: 100%;
-    height: 100%;
 }
 
 #divTextoInicio{
-    width: 70%;
-    height: 25%;
+    width: 40%;
+    height: auto;
     margin: 0 auto;
-    margin-left: 15%;
-    margin-top: 25%;
-    position: absolute;
-    z-index: 3;
+    position: relative;
+    margin-top: 25vmax;
 }
 
 #tituloTxtInicio{
     font-family: 'Josefin Sans', sans-serif;
-    width: auto;
     text-align: center;
     color: #F2CB05;
+    font-size: 3vmax;
 }
 
 #subTituloTxtInicio{
     font-family: 'Spartan', sans-serif;
     text-align: center;
+    margin-top: 3vmax;
     color: white;
+    font-size: 2vmax;
+    
 }
 #hrInicio1{
-    width: 60%;
+    width: 100%;
     height: 2%;
     margin: 0 auto;
     background-color: #F2CB05;
+    position: absolute;
     opacity: 1;
     z-index: 5;
 }
 #hrInicio2{
-    width: 60%;
+    width: 100%;
     height: 2%;
     margin: 0 auto;
-    margin-left: 20%;
     background-color: white;
-    opacity: 0.4;
+    opacity: 1;
     position: absolute;
-    filter: blur(10px);
+    filter: blur(6px);
+}
+#projetosSec{
+    background-color:#0D0D0D;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
 }

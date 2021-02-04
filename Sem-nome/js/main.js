@@ -11,7 +11,7 @@ $(window).on("scroll touchmove", function() {
 
     if ($(document).scrollTop() >= $("#projetosSec").position().top) {
       $('.linkProjeto').css('text-decoration-line', 'underline');
-      $('.linkProjeto').css('text-decoration-color', '#F29F05');
+      $('.linkProjeto').css('text-decoration-color', '#F2CB05');
       $('.linkProjeto').css('text-decoration-thickness', '13%');
       $('.linkInicio').css('text-decoration', 'none');
       $('.linkSobre').css('text-decoration', 'none');
@@ -44,7 +44,6 @@ $(window).on("scroll touchmove", function() {
   function scroll(){
     btnTop = document.getElementById("btnTop");
     divMenu = document.getElementById("divMenu");
-    fundoLogo = document.getElementById("divFundo");
     linkInicio = document.getElementById("linkInicio");
     linkProjeto = document.getElementById("linkProjeto");
     linkSobre = document.getElementById("linkSobre");
@@ -55,20 +54,13 @@ $(window).on("scroll touchmove", function() {
       btnTop.style.animationDuration = "0.7s";
       divMenu.style.transition = "0.3s";
       divMenu.style.backgroundColor = "#4040402d";
-      divMenu.style.height = "4em";
-      fundoLogo.style.width = "10%";
-      linkInicio.style.marginTop = "1em"
-      linkProjeto.style.marginTop = "0.60em";
-      linkSobre.style.marginTop = "0.60em";
-      linkContato.style.marginTop = "0.60em";
+      divMenu.style.height = "10%";
 
     }else{
       btnTop.style.display = "none";
       divMenu.style.transition = "0.7s";
-      divMenu.style.backgroundColor = "#0D0D0D";
-      divMenu.style.height = "6em";
-      fundoLogo.style.width = "20%";
-      //0.60 e 1em
+      divMenu.style.backgroundColor = "#0d0d0d00";
+      divMenu.style.height = "14.5%";
     }
   }
   function subir(){
