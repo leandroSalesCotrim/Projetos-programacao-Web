@@ -1,6 +1,5 @@
 #body{
-    background-color:#0D0D0D;
-    
+    background-color: #F2CB05;
 }
 
 /*Menu*/
@@ -10,6 +9,7 @@
     height: 14.5%;
     z-index: 4;
     background-color: #0d0d0d00;
+    
 }
     
 #divLogo{
@@ -24,10 +24,8 @@
     position: relative;
     margin:0 auto;
     animation-duration: 0.7s;
-    background-color: honeydew;
 }
 #imgLogo{
-    z-index: 10;
     width: 100%;
     height: 100%;
     background-image: url("../img/logoRaio.png") ;
@@ -78,10 +76,9 @@
 }
  .linkContato   {
     color: white;
-    float: left;
     margin-left: 8%;
+    float: left;
     text-decoration: none;
-    text-decoration-color: rgba(0, 0, 0, 0);
     font-family: 'Spartan', sans-serif;
     font-size: 1.5vmax;
 }
@@ -90,16 +87,14 @@
     margin-left: 8%;
     float: left;
     text-decoration: none;
-    text-decoration-color: rgba(0, 0, 0, 0);
     font-family: 'Spartan', sans-serif;
     font-size: 1.5vmax;
 }
- .linkProjeto   {
+.linkProjeto   {
     color: white;
     margin-left: 8%;
     float: left;
     text-decoration: none;
-    text-decoration-color: rgba(0, 0, 0, 0);
     font-family: 'Spartan', sans-serif;
     font-size: 1.5vmax;
 }
@@ -116,54 +111,81 @@
  .linkContato:hover{
     color:white;
 }
+/*Css diferente para dispositivos com tela de largura de no maximo 1024px*/
+@media screen and (max-width: 1024px) {
+	.linkInicio {
+		color: white;
+        margin-left:3%;
+        float:left;
+        text-decoration: none;
+        font-family: 'Spartan', sans-serif;
+        font-size: 1.5vmax;
+	}
+    .linkSobre {
+		color: white;
+        margin-left: 5%;
+        float: left;
+        text-decoration: none;
+        font-family: 'Spartan', sans-serif;
+        font-size: 1.5vmax;
+	}
+    .linkProjeto {
+		color: white;
+        margin-left: 5%;
+        float: left;
+        text-decoration: none;
+        font-family: 'Spartan', sans-serif;
+        font-size: 1.5vmax;
+	}
+    .linkContato {
+		color: white;
+        margin-left: 5%;
+        float: left;
+        text-decoration: none;
+        font-family: 'Spartan', sans-serif;
+        font-size: 1.5vmax;
+	}
+}
 /*Formatação do botão de subir a pagina*/
 #btnTop{
     position: fixed;
     bottom: 10%;
     right: 4%;
-    border: none;
+    border: solid;
+    border-color: #F2CB05;
+    border-width: 0.1vmax;
     border-radius: 50%;
-    background-color: #F2CB05;
+    background-color: #0d0d0d;
     outline: none;
-    width: 4em;
-    height: 4em;
+    width: 5vmax;
+    height: 10vmin;
     display: none;
     z-index: 1;
+
 }
 #imgBtnTop{
     width: 50%;
     height: 50%;
-    margin-left: -0.9em;
-    margin-top: -1em;
+    margin-left: -1.1vmax;
+    margin-top: -2.5vmin;
     position: absolute;
-    z-index: 1;
+    z-index: 5;
+    background-image: url('../img/btnTop3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 
 }
 #divFundoBtn{
-    height: 100%;
-    width: 4em;
-    margin-top: -2em;
-    margin-left: -0.7em;
+    position: fixed;
+    bottom: 10%;
+    right: 4%;
+    width: 5vmax;
+    height: 10vmin;
     filter: blur(1.5em);
     opacity: 0.6;
     background-color: #F2CB05;
-    position: absolute;
-}
-@keyframes btnTop-blink {
-    0% { opacity: 0; }
-    10% { opacity: 0.2; }
-    20% { opacity: 0.8; }
-    30% { opacity: 0.1; }
-    40% { opacity: 0.9; }
-    50% { opacity: 0; }
-    60% { opacity: 0; }
-    70% { opacity: 0; }
-    80% { opacity: 0.1; }
-    90% { opacity: 0.2; }
-    93% { opacity: 0.3; }
-    95% { opacity: 0.4; }
-    98% { opacity: 0.5; }
-    100% { opacity: 0.6; }
+    display: none;
+    border-radius: 100%;
 }
 .btnTop-blink {
   -webkit-animation: btnTop-blink .65s linear;
@@ -181,6 +203,7 @@
 }
 ::-webkit-scrollbar {
     width: 8px;
+    height: 8px;
     background: #F2CB05;
 }
 ::-webkit-scrollbar-thumb {
@@ -190,29 +213,19 @@
 
 /*Conteudo do inicio*/
 #inicioSec{
-    height: 100vmax;
+    height: 100%;
     width: 100%;
-    background-size: cover;
+    padding-bottom: 100vmin;
 }
 #divConteudoInicio{
     width: 100% ;
     height: 100%;
-    position: absolute;
-}
-#imgFundo{
-    width: 100%;
-    height: 100%;
-    position: absolute;
     background-image: url("../img/fundo.jpg") ;
     background-position: center;
+    position: absolute;
     background-size: cover;
-    background-repeat: no-repeat;
-}
-#sobreFundo{
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0.5;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
 }
 
 #divTextoInicio{
@@ -220,7 +233,7 @@
     height: auto;
     margin: 0 auto;
     position: relative;
-    margin-top: 25vmax;
+    top: 25vmax;
 }
 
 #tituloTxtInicio{
@@ -256,8 +269,68 @@
     position: absolute;
     filter: blur(6px);
 }
+/*Css diferente para dispositivos com tela de largura de no maximo 1024px*/
+@media screen and (max-width: 1024px) {
+	#inicioSec {
+		height: 100%;
+        width: 100%;
+        padding-bottom: 100vmax;
+	}
+}
+/*Conteudo sobre*/
+#conteudoSobre{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+#divSobreTitulo{
+    position: relative;
+}
+#sobreTitulo{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #0d0d0d;
+    font-size: 4vmax;
+    position: relative;
+}
+#pontoImg{
+    height: 10%;
+    width: 10%;
+    position: relative;
+}
+#sobreTxt{
+    color: #0d0d0d;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5vmax;
+}
+@media screen and (max-width: 1024px) {
+	#sobreTxt {
+		color: #0d0d0d;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.8vmax;
+	}
+}
+/*Conteudo dos projetos*/
 #projetosSec{
-    background-color:#0D0D0D;
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
+    background-color: #0d0d0d;
+    border-bottom-left-radius: 3%;
+    border-bottom-right-radius: 3%;
+}
+
+/*Conteudo dos contato*/
+#containerContato{
+    width: 62vmax;
+    height: 75vmin;
+    margin: 0 auto;
+    background-color: #F2CB05;
+    border-color: #0d0d0d;
+    border-style: solid;
+    border-width: 1vmin;
+    
+}
+#divConteudoContato{
+    width: 60vmax;
+    height: 70vmin;
+    margin: 0 auto;
+    background-color: #0d0d0d;
+    
 }
