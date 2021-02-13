@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
     
     <title>Sem Titulo</title>
@@ -26,6 +26,7 @@
 
 </head>
 <body id="body">
+    
     <header id="header" class="container-fluid">
 
         <div id="divMenu" class="divMenu row align-items-start" >
@@ -56,30 +57,49 @@
             <div id="divConteudoInicio">
 
                 <div id="divTextoInicio">
+                 
                     <h1 id="tituloTxtInicio" >Nome da empresa</h1>
 
                 
                     <hr id="hrInicio1">
                 
-                    <hr id="hrInicio2">
                 
                     <h3  id="subTituloTxtInicio" >Frase da empresa</h3>
-                
+                    <div class="divIconesInicio">
+                        <a href="#"><img src="img/WhatsAppIcone.png" class="icones" alt=""></a>
+                        <a href="#"><img src="img/instagramIcone.png" class="icones" alt=""></a>
+                        <a href="#"><img src="img/iconeFacebook.png" class="icones" alt=""></a>
+                    </div>
                 </div>
+                
             </div>
         
     </section>
+    
     <br>
+   
     <section id="sobreSec" >
+    
         <div id="conteudoSobre">
-            <div id="divSobreTitulo"></div><img src="img/ponto2.png" id="pontoImg" alt="">
-                <h1 id="sobreTitulo">Sobre nós</h1> 
+            
+            <div id="divSobreTitulo"></div>
+            
+            <img src="img/ponto2.png" id="pontoImg" alt="">
+                
+            <h1 id="sobreTitulo">Sobre nós</h1> 
+            
             <hr>
+            
             <p id="sobreTxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus euismod quis viverra nibh cras pulvinar. Lobortis mattis aliquam faucibus purus in massa. Morbi leo urna molestie at elementum eu facilisis. Netus et malesuada fames ac turpis egestas maecenas pharetra convallis. Nisl purus in mollis nunc sed id semper risus. Tortor dignissim convallis aenean et tortor at risus viverra. Scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Nunc sed augue lacus viverra vitae congue eu. Nunc aliquet bibendum enim facilisis gravida neque. Ultrices eros in cursus turpis massa. Dolor morbi non arcu risus quis varius. Morbi leo urna molestie at elementum eu facilisis sed. Pellentesque habitant morbi tristique senectus et netus et. Urna nunc id cursus metus aliquam eleifend. Ornare quam viverra orci sagittis eu volutpat odio facilisis mauris. Rhoncus mattis rhoncus urna neque viverra justo. Porttitor lacus luctus accumsan tortor. Aliquam vestibulum morbi blandit cursus risus at ultrices.</p>
+            
             <hr>
+            
             <br>
+        
         </div>
+    
     </section>
+    
     <section  id="projetosSec" >
             <h1>Projetos</h1>
             <h1>Projetos</h1>
@@ -114,35 +134,80 @@
             <h1>Projetos</h1>
     </section>
     <section  id="contatoSec" >
+
         <br>
         <br>
+
         <div id="containerContato">
-            <div id="divConteudoContato">
-                <form action="">
-                    <label for="">Nome:</label>
-                    <input type="text">
+            <div id="conteudoContato">
+
+                <div id="divTxtContato">
+               
+                    <center>
+                        <img src="img/iconeEmail.png" id="imgIconEmail" alt="">
+                        <h1 id="tituloTxtContato">Contato</h1>
+                        <h5 id="subTxtContato">Entre em contato conosco através de nosso E-mail ou através de outros meios de contato!</h5>
+                    </center>
                     <br>
-                    <label for="">E-mail:</label>
-                    <input type="email">
+                    <div class="divIconesContato">
+                        <a href="#"><img href="#" src="img/WhatsAppIcone.png" class="icones" alt=""></a>
+                        <a href="#"><img href="#" src="img/instagramIcone.png" class="icones" alt=""></a>
+                        <a href="#"><img href="#" src="img/iconeFacebook.png" class="icones" alt=""></a>
+                    </div>
+                </div>
+
+                <form action="" id="formContato">
+               
+                        
+                    <label id="lblNome" for="txtNome">Nome Completo</label>
                     <br>
-                    <label for="">Assunto:</label>
-                    <select name="" id="">
-                        <option value="">valor1</option>
-                        <option value="">valor2</option>
-                        <option value="">valor3</option>
+                    <input type="text" id="txtNome" onfocus="foco1()" onblur="desfoque()" >
+
+                    <br>
+                    <br>
+
+                    <label id="lblEmail" for="txtEmail">E-mail</label>
+                    <br>
+                    <input type="email" id="txtEmail" onfocus="foco2()" onblur="desfoque()">
+
+                    <br>
+                    <br>
+
+                    <label id="lblAssunto" for="txtAssunto">Assunto</label>
+                    <br>
+                    <select name="" id="txtAssunto" onfocus="foco3()" onblur="desfoque()">
+                        <option value=""></option>
+                        <option value="1">Sugestão</option>
+                        <option value="2">Elogio</option>
+                        <option value="3">reclamação</option>
                     </select>
+
                     <br>
-                    <label for="">Sua mensagem:</label>
-                    <input type="text">
+                    <br>
+                        
+                    <label id="lblMensagem" for="txtMensagem">Sua mensagem</label>
+                    <br>
+                    <textarea type="text" id="txtMensagem" onfocus="foco4()" onblur="desfoque()" class="form-control" rows="3"></textarea>
+
+                    <br>
+                    <center>
+                        <button id="btnEnviar">enviar</button>
+                    </center>
+                
                 </form>
             </div>
+    
         </div>
-        </section>
+    </section>
+
     <br>
+    
     <button id="btnTop" onclick="subir()" class="btn animate__backInRight">
+    
         <source id="imgBtnTop">
+   
     </button>
-        <div id="divFundoBtn" class="btnanimate__backInRight" ></div>
+ 
 </body>
 
 </html>
