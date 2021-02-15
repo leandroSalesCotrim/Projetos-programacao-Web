@@ -41,21 +41,18 @@ $(window).on("scroll touchmove", function() {
  
   function scroll(){
     btnTop = document.getElementById("btnTop");
-    divFundoBtn = document.getElementById("divFundoBtn");
     divMenu = document.getElementById("divMenu");
 
 
     if(document.documentElement.scrollTop > 95){
       btnTop.style.display = "block";
       btnTop.style.animationDuration = "0.7s";
-      divFundoBtn.style.display = "block";
       divMenu.style.transition = "0.3s";
       divMenu.style.backgroundColor = "#0d0d0da6";
-      divMenu.style.height = "10%";
+      divMenu.style.height = "8%";
     }else{
       btnTop.style.display = "none";
       btnTop.style.transition = "0.7s";
-      divFundoBtn.style.display = "none";
       divMenu.style.transition = "0.7s";
       divMenu.style.backgroundColor = "#0d0d0d00";
       divMenu.style.height = "14.5%";
@@ -67,7 +64,7 @@ $(window).on("scroll touchmove", function() {
   function foco1(){
     lblNome = document.getElementById("lblNome");
     txtNome = document.getElementById("txtNome");
-    lblNome.style.marginTop = "3vmax";
+    lblNome.style.marginTop = "3vmin";
     lblNome.style.color = "#F2CB05";
     lblNome.style.transition = "0.3s";
     txtNome.style.borderColor = "#F2CB05";
