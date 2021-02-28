@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <title>Sem Titulo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link href="img/logoRaio.png" rel="icon">
+
     <!-- Fonte utilizada -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
 
@@ -25,34 +26,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 </head>
+
 <body id="body">
     
+    <!-- MENU -->
     <header id="header" class="container-fluid">
 
         <div id="divMenu" class="divMenu row align-items-start" >
                    
             <div id="divLogo" class="col animate__backInDown">
 
-                    <div id="imgLogo">
-                        <div id="imgLogoFundo" class="logo-blink">
-                        </div>
-                    </div>
+                <div id="imgLogo">
+
+                    <div id="imgLogoFundo" class="logo-blink"></div>
+                    
+                </div>
+            
             </div>
                 
             <nav id="navLink">
                 
                 <a href="#inicioSec" id="linkInicio" class="linkInicio nav-link">Inicio</a>
                 <a href="#sobreSec" id="linkSobre" class="linkSobre nav-link">Sobre nós</a>
-                <a href="#projetosSec" id="linkProjeto" class="linkProjeto nav-link">Projetos</a>
-                <a href="#contatoSec" id="linkContato" class="linkContato nav-link">Contato</a>
+                <a href="#topoServico" id="linkServico" class="linkServico nav-link">Serviços</a>
+                <a href="#formContato" id="linkContato" class="linkContato nav-link">Contato</a>
 
             </nav>
             
         </div>
 
     </header>
-    <section id="inicioSec" >
 
+    <!-- SEÇÃO INICIO -->
+    <section id="inicioSec" >
         
             <div id="divConteudoInicio">
 
@@ -60,16 +66,18 @@
                  
                     <h1 id="tituloTxtInicio" >Nome da empresa</h1>
 
-                
                     <hr id="hrInicio1">
                 
-                
                     <h3  id="subTituloTxtInicio" >Frase da empresa</h3>
+
                     <div class="divIconesInicio">
+
                         <a href="#"><img src="img/WhatsAppIcone.png" class="icones" alt="WhatsApp icone"></a>
                         <a href="#"><img src="img/instagramIcone.png" class="icones" alt="Facebook icone"></a>
                         <a href="#"><img src="img/iconeFacebook.png" class="icones" alt="Instragram icone"></a>
+
                     </div>
+
                 </div>
                 
             </div>
@@ -78,6 +86,7 @@
     
     <br>
    
+    <!-- SEÇÃO SOBRE -->
     <section id="sobreSec" >
     
         <div id="conteudoSobre">
@@ -100,39 +109,99 @@
     
     </section>
     
-    <section  id="projetosSec" >
-            <h1>Projetos</h1>
-            <h1>Projetos</h1>
-            <h1>Projetos</h1>
-            <h1>Projetos</h1>
-            <h1>Projetos</h1>
-            <h1>Projetos</h1>
-            <h1>Projetos</h1>
-            <h1>Projetos</h1>
-            <h1>Projetos</h1>
-            <h1>Projetos</h1>
-            <h1>Projetos</h1>
-            <h1>Projetos</h1>
-            <h1>Projetos</h1>
-            <h1>Projetos</h1>
-            <h1>Projetos</h1>
-            <h1>Projetos</h1>
-            <h1>Projetos</h1>
-            <h1>Projetos</h1>
-            <h1>Projetos</h1>
-            <h1>Projetos</h1>
-            <h1>Projetos</h1>
-            <h1>Projetos</h1>
-            <h1>Projetos</h1>
-            <h1>Projetos</h1>
-            <h1>Projetos</h1>
-            <h1>Projetos</h1>
-            <h1>Projetos</h1>
-            <h1>Projetos</h1>
-            <h1>Projetos</h1>
-            <h1>Projetos</h1>
-            <h1>Projetos</h1>
+    <!-- SEÇÃO SERVIÇO -->
+    <!-- OBS: ESSA SEÇÃO É DIVIDIDA POR DUAS LINHAS (DUAS DIVS) QUE SEPARAM O CONTEUDO -->
+    <section  id="servicosSec" >
+
+        <br>
+        <br>
+        
+        <div  class="servicosC container">
+        
+            <div  class="tituloServico">
+        
+                <center >
+        
+                    <h2 class="txtTituloServico">Nossos serviços</h2>
+                    <hr class="hrServico">
+        
+                </center>
+        
+            </div>
+        
+            <div id="topoServico" class="linha1Servico">
+        
+                <div class="divIcone1">
+        
+                    <center>
+        
+                        <img class="icones" src="img/24-horas.png" alt="Atendimento 24 horas">
+                        <p class="txtDescServico">Atendimento 24 horas</p>
+                        <p class="txtSubDescServico">Fazemos atendimento 24 horas via WhatsApp e nossas redes sociais</p>
+        
+                    </center>
+        
+                </div>
+        
+                <div class="divIcone2">
+        
+                    <center>
+        
+                        <img class="icones" src="img/engrenagens.png" alt="Manutenção mensal">
+                        <p class="txtDescServico">Manutenção mensal</p>
+                        <p class="txtSubDescServico">Nossos contratos oferecem uma verificação mensal para manutenção de equipamentos</p>
+        
+                    </center>
+        
+                </div>
+        
+                <div class="divIcone3">
+        
+                    <center>
+        
+                        <img class="icones" src="img/lampada.png" alt="Design thinking">
+                        <p class="txtDescServico">Design thinking</p>
+                        <p class="txtSubDescServico">Trabalhamos com o design thinking para abordar os problemas da melhor forma</p>
+        
+                    </center>
+        
+                </div>
+        
+            </div>
+        
+            <div class="linha2Servico">
+        
+                <div class="divIcone1">
+        
+                    <center>
+        
+                        <img class="icones" src="img/localizacao.png" alt="Serviço Local">
+                        <p class="txtDescServico">Serviço Local</p>
+                        <p class="txtSubDescServico">Oferecemos serviço remoto para que o cliente não necessite vir até nós</p>
+        
+                    </center>
+        
+                </div>
+        
+                <div class="divIcone2">
+        
+                    <center>
+        
+                        <img class="icones" src="img/transporte.png" alt="Transportadora privada">
+                        <p class="txtDescServico">Transportadora privada</p>
+                        <p class="txtSubDescServico">Possuimos nossa transportadora privada que por meio dela, entregamos todos os nossos equipamentos</p>
+        
+                    </center>
+        
+                </div>
+        
+            </div>
+        
+        </div>
+    
     </section>
+   
+    <!-- SEÇÃO CONTATO -->
     <section  id="contatoSec" >
 
         <br>
@@ -140,27 +209,34 @@
         <br>
         <br>
 
-        <div id="containerContato">
+        <div id="containerContato" >
+      
             <div id="conteudoContato">
 
                 <div id="divTxtContato">
                
-                    <center>
+                    <center >
+             
                         <img src="img/iconeEmail.png" id="imgIconEmail" alt="">
                         <h1 id="tituloTxtContato">Contato</h1>
                         <h5 id="subTxtContato">Entre em contato conosco através de nosso E-mail ou através de outros meios de contato!</h5>
+          
                     </center>
+         
                     <br>
                     
-                    <div class="divIconesContato">
+                    <div  class="divIconesContato" >
+             
                         <a href="#"><img src="img/WhatsAppIcone.png" class="icones" alt="WhatsApp icone"></a>
                         <a href="#"><img src="img/instagramIcone.png" class="icones" alt="Facebook icone"></a>
                         <a href="#"><img src="img/iconeFacebook.png" class="icones" alt="Instragram icone"></a>
+            
                     </div>
+           
                 </div>
+           
                 <form action="" id="formContato">
                
-                        
                     <label id="lblNome" for="txtNome">Nome Completo</label>
                     <br>
                     <input type="text" id="txtNome" onfocus="foco1()" onblur="desfoque()" >
@@ -178,10 +254,12 @@
                     <label id="lblAssunto" for="txtAssunto">Assunto</label>
                     <br>
                     <select name="" id="txtAssunto" onfocus="foco3()" onblur="desfoque()">
+                  
                         <option value=""></option>
                         <option value="1">Sugestão</option>
                         <option value="2">Elogio</option>
-                        <option value="3">reclamação</option>
+                        <option value="3">Reclamação</option>
+             
                     </select>
 
                     <br>
@@ -192,28 +270,64 @@
                     <textarea type="text" id="txtMensagem" onfocus="foco4()" onblur="desfoque()" class="form-control" rows="3"></textarea>
 
                     <br>
+        
                     <center>
+              
                         <button id="btnEnviar">enviar</button>
+             
                     </center>
                 
                 </form>
+        
             </div>
     
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
+   
     </section>
-
-    <br>
     
     <button id="btnTop" onclick="subir()" class="btn animate__backInRight"  >
     
         <source id="imgBtnTop">
    
     </button>
- 
+
+    <!-- RODAPE -->
+    <!-- OBS: O FUNDO DO RODAPÉ SOBREPÕE O CONTEUDO DA SECTION ACIMA EM RESOLUÇÕES COM A ALTURA ABAIXO DO NORMAL-->
+    <footer class="footer mt-auto py-3">
+
+        <div class="container">
+   
+            <div id="divTxtLocal">
+        
+                <img src="img/icon-map.png" alt="icone Mapa">
+                <br>
+                <span class="txtFooter text-muted">Nome da empresa<br>
+                    R. Nome da rua, 123, nome do bairro, SP<br>
+                    Seg. à sex. 10h - 16h. Sáb. 10h - 16h
+                </span>
+            
+            </div>
+            
+            <div id="divTxtMe">
+            
+                <center>
+            
+                    <a href="https://github.com/leandroSalesCotrim">
+                        <img id="gitIcon" src="img/gitIcon.png" alt="gitHub icone">
+                    </a>
+            
+                    <br>
+            
+                    <span class="text-muted">© 2021 por Leandro de Sales Cotrim.</span>
+            
+                </center>
+            
+            </div>
+        
+        </div>
+    
+    </footer>
+
 </body>
 
 </html>

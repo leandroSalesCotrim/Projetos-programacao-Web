@@ -1,4 +1,5 @@
-#body{
+html, #body{
+    height: 100%;
     background-color: #F2CB05;
 }
 
@@ -17,6 +18,7 @@
     position: relative;
     animation-duration: 0.7s;
 }
+
 #divConteudoLogo{
     height: 100%;
     width: 25%;
@@ -24,6 +26,7 @@
     margin:0 auto;
     animation-duration: 0.7s;
 }
+
 #imgLogo{
     width: 100%;
     height: 100%;
@@ -32,6 +35,7 @@
     background-size:contain;
     background-repeat: no-repeat;
 }
+
 #imgLogoFundo{
     width: 100%;
     height: 100%;
@@ -41,6 +45,7 @@
     background-size:contain;
     background-repeat: no-repeat;
 }
+
 @keyframes logo-blink {
     0% { opacity: 0; }
     15% { opacity: 1; }
@@ -51,6 +56,7 @@
     95% { opacity: 0; }
     100% { opacity: 0.5; }
 }
+
 .logo-blink {
   -webkit-animation: logo-blink .65s linear;
   -moz-animation: logo-blink .65s linear;
@@ -59,58 +65,66 @@
   animation: logo-blink .65s linear;
   animation-delay: 0.7s;
 }
+
 #navLink{
     width: 70%;
     height: auto;
     margin-top: auto;
     margin-bottom: auto;
 }
+
 .linkInicio  {
     color: white;
     margin-left:5%;
     float:left;
     text-decoration: none;
     font-family: 'Spartan', sans-serif;
-    font-size: 1.5vmax;
+    font-size: 20px;
 }
- .linkContato   {
+
+.linkSobre   {
     color: white;
     margin-left: 8%;
     float: left;
     text-decoration: none;
     font-family: 'Spartan', sans-serif;
-    font-size: 1.5vmax;
+    font-size: 20px;
 }
- .linkSobre   {
+
+.linkServico   {
     color: white;
     margin-left: 8%;
     float: left;
     text-decoration: none;
     font-family: 'Spartan', sans-serif;
-    font-size: 1.5vmax;
+    font-size: 20px;
 }
-.linkProjeto   {
+
+.linkContato   {
     color: white;
     margin-left: 8%;
     float: left;
     text-decoration: none;
     font-family: 'Spartan', sans-serif;
-    font-size: 1.5vmax;
+    font-size: 20px;
 }
- .linkInicio:hover{
+ 
+.linkInicio:hover{
     color:white;
 }
- .linkSobre:hover{
+ 
+.linkSobre:hover{
     color:white;
     
 }
- .linkProjeto:hover{
+ 
+.linkServico:hover{
     color:white;
 }
- .linkContato:hover{
+ 
+.linkContato:hover{
     color:white;
 }
-/*Css diferente para dispositivos com tela de largura de no maximo 1024px*/
 
 /*Formatação do botão de subir a pagina*/
 #btnTop{
@@ -123,24 +137,22 @@
     border-radius: 50%;
     background-color: #0d0d0d;
     outline: none;
-    width: 5vmax;
-    height: 10vmin;
+    width: 5%;
+    height: 10%;
     display: none;
-    z-index: 1;
     box-shadow: 0 0 40px #F2CB05;
-
 }
+
 #imgBtnTop{
     width: 50%;
     height: 50%;
-    margin-left: -2.3vmin;
-    margin-top: -2.5vmin;
+    margin-left: -25%;
+    margin-top: -25%;
     position: absolute;
     z-index: 5;
     background-image: url('../img/btnTop3.png');
     background-size: contain;
     background-repeat: no-repeat;
-    
 }
 
 .btnTop-blink {
@@ -157,11 +169,13 @@
 ::-webkit-scrollbar-track {
     background-color: #404040;
 }
+
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
     background: #F2CB05;
 }
+
 ::-webkit-scrollbar-thumb {
     background: #F2CB05;
 }
@@ -171,9 +185,8 @@
 #inicioSec{
     height: 100%;
     width: 100%;
-    padding-bottom: 100vmin;
-    
 }
+
 #divConteudoInicio{
     width: 100% ;
     height: 100%;
@@ -183,6 +196,7 @@
     background-size: cover;
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
+    box-shadow: 0 10px 3px #f29f05;
 }
 
 #divTextoInicio{
@@ -190,25 +204,27 @@
     height: auto;
     margin: 0 auto;
     position: relative;
-    top: 22vmax;
+    top: 50%;
 }
 
 #tituloTxtInicio{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Comfortaa', cursive;
     text-align: center;
-    color: #F2CB05;
-    text-shadow: 2px 2px 2px black;
+    color: white;
+    text-shadow: 3px 3px 2px black;
     font-size: 3vmax;
+    margin-bottom: 3%;
 }
 
 #subTituloTxtInicio{
     font-family: 'Spartan', sans-serif;
     text-align: center;
-    margin-top: 3vmax;
+    margin-top: 10%;
     color: white;
     font-size: 2vmax;
     text-shadow: 2px 2px 1px black;
 }
+
 #hrInicio1{
     width: 100%;
     height: 4%;
@@ -218,57 +234,155 @@
     opacity: 1;
     box-shadow: 0 0 15px red;
 }
+
 .divIconesInicio{
     margin-top: 7%;
     margin-left: 30%;
 }
+
 .divIconesInicio .icones{
-    width: 2.5vmax;
-    height: 2.5vmax;
+    width: 10%;
+    height: 10%;
     float: left;
     margin-left: 7%;
 }
 /*Conteudo sobre*/
+#sobreSec{
+}
+
 #conteudoSobre{
     width: 70%;
     margin: 0 auto;
     text-align: center;
 }
+
 #divSobreTitulo{
     position: relative;
 }
+
 #sobreTitulo{
-    font-family: 'Josefin Sans', sans-serif;
     color: #0d0d0d;
     font-size: 4vmax;
     position: relative;
+    text-shadow: 3px 3px 1px #f29f05;
 }
+
 #pontoImg{
     height: 10%;
     width: 10%;
     position: relative;
 }
+
 #sobreTxt{
     color: #0d0d0d;
     font-family: 'Quicksand', sans-serif;
     font-size: 1.5vmax;
+    text-shadow: 1px 1px 1px #f29f05;
 }
-/*Conteudo dos projetos*/
-#projetosSec{
-    background-color: #0d0d0d;
+
+/*Conteudo dos servicos*/
+#servicosSec{
     border-bottom-color: #f0f0f0;
-    border-bottom-width: 6px;
+    border-bottom-width: 7px;
     border-bottom-style: solid;
     border-top-color: #f0f0f0;
-    border-top-width: 10px;
+    border-top-width: 7px;
     border-top-style: solid;
     box-shadow: 0 6px 4px #464646;
+    background-color: #0d0d0d;
+    height: 100%;
+    width: 100%;
+}
+
+.servicosC{
+    width: 100%;
+    height: 100%;
+}
+
+.txtTituloServico{
+    color: white;
+}
+
+.hrServico{
+    background-color: #F2CB05;
+    width: 10%;
+    padding-bottom: 0.5%;
+    opacity: 1;
+}
+
+.linha1Servico{
+    width: auto;
+    height: 40%;
+    margin-top: 6%;
+}
+
+.linha1Servico .divIcone1{
+    width: 30%;
+    float: left;
+    height: 100%;
+}
+
+.linha1Servico .divIcone2{
+    margin-left: 5%;    
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+.linha1Servico .divIcone3{
+    margin-left: 5%;    
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+.linha1Servico .icones{
+    width: 20%;
+}
+
+.txtDescServico{
+    color: #f0f0f0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.4vmax;
+}
+
+.txtSubDescServico{
+    color: rgb(196, 196, 196);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1vmax;
+}
+
+.linha2Servico{
+    width: auto;
+    height: 30%;
+}
+
+.linha2Servico .divIcone1{
+    width: 30%;
+    float: left;
+    margin-left: 18%;    
+    height: 100%;
+}
+
+.linha2Servico .divIcone2{
+    margin-left: 5%;    
+    width: 30%;
+    float: left;
+    height: 100%;
+}
+
+.linha2Servico .icones{
+    width: 20%;
 }
 
 /*Conteudo dos contato*/
+#contatoSec{
+    height: 100%;
+}
+
 #containerContato{
-    width: 60vmax;
-    height: 70vmin;
+    width: 60%;
+    height: 70%;
     margin: 0 auto;
     background-color: #0d0d0d;
     border-radius: 1%;
@@ -281,6 +395,7 @@
     color: white;
     outline: none;
 }
+
 #divTxtContato{
     position: relative;
     width: 50%;
@@ -293,36 +408,41 @@
     border-bottom: none;
     border-right-color: #F2CB05;
 }
+
 #imgIconEmail{
-    width: 8vmax;
-    height: 8vmax;
+    width: 25%;
+    height: 25%;
     margin-top: 15%;
 }
+
 .divIconesContato{
     margin-top: 7%;
     margin-left: 27%;
 }
+
 .divIconesContato .icones{
-    width: 2.5vmax;
-    height: 2.5vmax;
+    width: 12%;
     float: left;
     margin-left: 7%;
 }
+
 #tituloTxtContato{
     font-size: 3.3vmax;
     color: white;
 }
+
 #subTxtContato{
     font-size: 1vmax;
     font-family: 'Quicksand', sans-serif;
     width: 90%;
 }
+
 #formContato{
     position: relative;
     float: right;
     width: 50%;
-    height: 100%;
 }
+
 #txtNome{
     outline: none;
     background-color: #0d0d0d;
@@ -332,20 +452,18 @@
     border-left: none;
     border-right: none;
     color: white;
-    width: 25vmax;
-    margin-left: 2vmax;
-    margin-top: 3vmax;
+    width: 84%;
+    margin-left: 7%;
+    margin-top: 10%;
 }
+
 #lblNome{
     color: #404040;
     position: absolute;
-    margin-top: 4.8vmax;
-    margin-left: 0.3vmax;
-    padding-left: 0.3vmax;
-    padding-right: 0.4vmax;
-    margin-left: 2vmax;
-    
+    margin-top: 16%;
+    margin-left: 10%;
 }
+
 #txtEmail{
     outline: none;
     background-color: #0d0d0d;
@@ -355,107 +473,128 @@
     border-left: none;
     border-right: none;
     color: white;
-    width: 25vmax;
-    margin-left: 2vmax;
+    width: 84%;
+    margin-left: 7%;
 }
+
 #lblEmail{
-    margin-top: 1.9vmax;
-    margin-left: 0.3vmax;
-    padding-left: 0.3vmax;
-    padding-right: 0.4vmax;
+    margin-top: 6%;
     position: absolute;
     color: #404040;
-    margin-left: 2vmax;
+    margin-left: 10%;
 }
+
 #txtAssunto{
     outline: none;
     background-color: #0d0d0d;
     border-style: solid;
     border-color: #404040;
     color: white;
-    width: 25vmax;
-    height: 2.2vmax;
-    margin-left: 2vmax;
+    width: 84%;
+    height: 7%;
+    margin-left: 7%;
     border-width: 0.2vmax;
 }
+
 #lblAssunto{
-    background-color: #0d0d0d;
-    margin-top: 1.9vmax;
-    margin-left: 2.2vmax;
-    padding-left: 0.3vmax;
-    padding-right: 0.8vmax;
+    margin-top: 6.5%;
+    margin-left: 10%;
     position: absolute;
     color: #404040;
+    background-color: #0d0d0d;
+    padding-left: 1%;
+    padding-right: 1%;
 }
+
 #txtMensagem{
     outline: none;
     background-color: #0d0d0d;
     border-style: solid;
     border-color: #404040;
     color: white;
-    width: 25vmax;
-    margin-left: 2vmax;
+    width: 84%;
+    margin-left: 7%;
     border-width: 0.2vmax;
     resize: none;
     box-shadow: none;
 }
+
 #lblMensagem{
     background-color: #0d0d0d;
-    margin-top: 0.8vmax;
-    margin-left: 2.5vmax;
-    padding-left: 0.3vmax;
-    padding-right: 0.4vmax;
+    margin-top: 3%;
+    margin-left: 10%;
+    padding-left: 1%;
+    padding-right: 1%;
     position: absolute;
     color: #404040;
 }
+
 #btnEnviar{
     background-color: #0d0d0d;
     border-style: solid;
     border-color: #F2CB05;
+    border-radius: 10%;
     color: white;
     font-family: 'Quicksand', sans-serif;
+    transition: 0.3s;
 }
+
+#btnEnviar:hover{
+    box-shadow: 0px 0px 10px #F2CB05;
+    transition: 0.3s;
+}
+
+.footer{
+    background-color: #0d0d0d;
+}
+
+#gitIcon{
+    width: 4%;
+}
+
+#divTxtLocal{
+    text-align: center;
+    background-color: blue;
+    width: 30%;
+    float: left;
+}
+
+#divTxtMe{
+    background-color: red;
+    width: 30%;
+    float: left;
+}
+
 /*Css mobile*/
 @media screen and (max-width: 1024px) {
     /*Menu*/
     .linkInicio {
-        color: white;
         margin-left:0%;
-        float:left;
-        text-decoration: none;
-        font-family: 'Spartan', sans-serif;
-        font-size: 1.7vmax;
+        font-size: 11px;
     }
+
     .linkSobre {
-        color: white;
         margin-left: 0%;
-        float: left;
-        text-decoration: none;
-        font-family: 'Spartan', sans-serif;
-        font-size: 1.7vmax;
+        font-size: 11px;
     }
-    .linkProjeto {
-        color: white;
+
+    .linkServico {
         margin-left: 0%;
-        float: left;
-        text-decoration: none;
-        font-family: 'Spartan', sans-serif;
-        font-size: 1.7vmax;
+        font-size: 11px;
     }
+
     .linkContato {
-        color: white;
         margin-left: 0%;
-        float: left;
-        text-decoration: none;
-        font-family: 'Spartan', sans-serif;
-        font-size: 1.7vmax;
+        font-size: 11px;
     }
+
     /*Inicio*/
     #inicioSec {
 		height: 100%;
         width: 100%;
         padding-bottom: 100vmax;
 	}
+
     #divTextoInicio{
         width: 50%;
         height: auto;
@@ -463,66 +602,143 @@
         position: relative;
         top: 40vmax;
     }
+
     .divIconesInicio{
         margin-top: 10%;
         margin-left: 15%;
     }
+
     .divIconesInicio .icones{
         width: 4vmax;
         height: 4vmax;
         float: left;
         margin-left: 7%;
     }
+
     /*botão de subir a pagina*/
     #btnTop{
-        position: fixed;
-        bottom: 10%;
-        right: 4%;
-        border: solid;
-        border-color: #F2CB05;
-        border-width: 0.1vmax;
-        border-radius: 50%;
-        background-color: #0d0d0d;
-        outline: none;
-        width: 15vmin;
-        height: 15vmin;
-        display: none;
-        z-index: 1;
-        box-shadow: 0 0 40px #F2CB05;
-
+        width: 70px;
+        height: 70px;
+        box-shadow: 0 0 10px #F2CB05;
+        border-radius: 100%;
+    
     }
+
     #imgBtnTop{
-        width: 50%;
-        height: 50%;
-        margin-left: -3.5vmin;
-        margin-top: -3.5vmin;
-        position: absolute;
-        z-index: 5;
-        background-image: url('../img/btnTop3.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-
+        width: 40%;
+        height: 40%;
+        margin-left: -20%;
+        margin-top: -20%;
     }
+
     /*Sobre*/
     #sobreTxt {
-		color: #0d0d0d;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.8vmax;
+    font-size: 16px;
 	}
+
+    /*Conteudo dos servicos*/
+    #servicosSec{
+        height: 120%;
+        width: 100%;
+    }
+
+    .servicosC{
+        width: 100%;
+        height: 80%;
+    }
+
+    .hrServico{
+        width: 20%;
+        padding-bottom: 1%;
+    }
+
+    .linha1Servico{
+        width: auto;
+        height: 40%;
+        margin-top: 6%;
+    }
+
+    .linha1Servico .divIcone1{
+        width: 30%;
+        float: left;
+        height: 100%;
+    }
+
+    .linha1Servico .divIcone2{
+        margin-left: 5%;    
+        width: 30%;
+        height: 100%;
+        float: left;
+    }
+
+    .linha1Servico .divIcone3{
+        margin-left: 5%;    
+        width: 30%;
+        height: 100%;
+        float: left;
+    }
+
+    .linha1Servico .icones{
+        width: 30%;
+    }
+
+    .txtDescServico{
+        color: #f0f0f0;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1.4vmax;
+    }
+
+    .txtSubDescServico{
+        color: rgb(196, 196, 196);
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1vmax;
+    }
+
+    .linha2Servico{
+        width: auto;
+        height: 30%;
+    }
+
+    .linha2Servico .divIcone1{
+        width: 30%;
+        float: left;
+        margin-left: 20%;    
+        height: 100%;
+
+    }
+
+    .linha2Servico .divIcone2{
+        margin-left: 5%;    
+        width: 30%;
+        float: left;
+        height: 100%;
+    }
+
+    .linha2Servico .icones{
+        width: 30%;
+    }
+
     /*Contato*/
-	#containerContato{
-        width: 90vmin;
-        height: 200vmin;
-        background-color: #0d0d0d;
-        border-radius: 1%;
+    #contatoSec{
+        height: 100%;
+        margin-bottom: 100%;
+    }
+
+    #containerContato{
+        width: 90%;
+        height: auto;
         box-shadow: none;
     }
+
+    #conteudoContato{
+        width: 100%;
+        height: 100%;
+    }
+
     #divTxtContato{
-        position: relative;
         width: 100%;
         height: auto;
-        float: left;
-        border-width: 0.5vmax;
+        float: none;
         border-style:solid;
         border-left: none;
         border-right: none;
@@ -530,130 +746,95 @@
         border-bottom-color: #F2CB05;
         padding-bottom: 10%;
     }
+
     #imgIconEmail{
-        width: 10vmax;
-        height: 10vmax;
+        width: 30%;
+        height: 30%;
         margin-top: 10%;
     }
+
     .divIconesContato{
         width: 40%;
         margin: 0 auto;
         height: auto;
+        margin-bottom: 10%;
     }
+
     .divIconesContato .icones{
-        width: 4vmax;
-        height: 4vmax;
-        float: left;
+        width: 26.3%;
+        height: 26.3%;
         margin-left: 7%;
     }
+
     #tituloTxtContato{
-        font-size: 5vmax;
-        color: white;
+        font-size: 35px;
     }
+
     #subTxtContato{
-        font-size: 1.7vmax;
-        font-family: 'Quicksand', sans-serif;
-        width: 90%;
+        font-size: 12px;
     }
+
     #formContato{
-        position: relative;
-        float: right;
-        width: 100%;
         height: auto;
+        width: 100%;
+        margin-bottom: 10%;
+        position: relative;
         background-color: #0d0d0d;
-    }
-    #txtNome{
-        outline: none;
-        border-style: solid;
-        border-color: #404040;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        color: white;
-        width: 90%;
-        margin-left: 2vmax;
-        margin-top: 3vmax;
-    }
-    #lblNome{
-        color: #404040;
-        position: absolute;
-        margin-top: 4.8vmax;
-        margin-left: 0.3vmax;
-        padding-left: 0.3vmax;
-        padding-right: 0.4vmax;
-        margin-left: 2vmax;
-        
-    }
-    #txtEmail{
-        outline: none;
-        border-style: solid;
-        border-color: #404040;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        color: white;
-        width: 90%;
-        margin-left: 2vmax;
-    }
-    #lblEmail{
-        margin-top: 1.9vmax;
-        margin-left: 0.3vmax;
-        padding-left: 0.3vmax;
-        padding-right: 0.4vmax;
-        position: absolute;
-        color: #404040;
-        margin-left: 2vmax;
-    }
-    #txtAssunto{
-        outline: none;
-        border-style: solid;
-        border-color: #404040;
-        color: white;
-        width: 90%;
-        height: 6vmin;
-        margin-left: 2vmax;
-        border-width: 0.2vmax;
-    }
-    #lblAssunto{
-        background-color: #0d0d0d;
-        margin-top: 1.9vmax;
-        margin-left: 2.2vmax;
-        padding-left: 0.3vmax;
-        padding-right: 0.8vmax;
-        position: absolute;
-        color: #404040;
-    }
-    #txtMensagem{
-        outline: none;
-        background-color: #0d0d0d;
-        border-style: solid;
-        border-color: #404040;
-        color: white;
-        width: 90%;
-        height: 20vmax;
-        margin-left: 4.5vmin;
-        border-width: 0.2vmax;
-        resize: none;
-        box-shadow: none;
-    }
-    #lblMensagem{
-        background-color: #0d0d0d;
-        margin-top: 0.8vmax;
-        margin-left: 2.5vmax;
-        padding-left: 0.3vmax;
-        padding-right: 0.4vmax;
-        position: absolute;
-        color: #404040;
-    }
-    #btnEnviar{
-        background-color: #0d0d0d;
-        border-style: solid;
         border-color: #F2CB05;
-        color: white;
-        font-family: 'Quicksand', sans-serif;
+        border-bottom-left-radius: 2%;
+        border-bottom-right-radius: 2%;
+        border-style: solid;
     }
+
+    #txtNome{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 8%;
+    }
+
+    #lblNome{
+        margin-top: 16%;
+        margin-left: 7%;
+    }
+
+    #txtEmail{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #lblEmail{
+        margin-top: 6%;
+        margin-left: 7%;
+    }
+
+    #txtAssunto{
+        width: 90%;
+        height: 4%;
+        margin-left: 5%;
+        margin-top: -4%;
+    }
+
+    #lblAssunto{
+        margin-top: 9.36%;
+        margin-left: 7%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    #txtMensagem{
+        width: 90%;
+        height: 15%;
+        margin-left: 5%;
+    }
+
+    #lblMensagem{
+        margin-top: 5%;
+        margin-left: 7%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
 }
-textarea:focus, input:focus, select:focus {
-    box-shadow: 0 0 0 0;
-    outline: none;
-} 
+
+@media screen and (max-width: 1024px) {
+}
