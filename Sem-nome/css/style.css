@@ -80,6 +80,8 @@ html, #body{
     text-decoration: none;
     font-family: 'Spartan', sans-serif;
     font-size: 20px;
+    text-shadow: 0 0 2px red;
+
 }
 
 .linkSobre   {
@@ -89,6 +91,7 @@ html, #body{
     text-decoration: none;
     font-family: 'Spartan', sans-serif;
     font-size: 20px;
+    text-shadow: 0 0 2px red;
 }
 
 .linkServico   {
@@ -98,6 +101,7 @@ html, #body{
     text-decoration: none;
     font-family: 'Spartan', sans-serif;
     font-size: 20px;
+    text-shadow: 0 0 2px red;
 }
 
 .linkContato   {
@@ -107,6 +111,7 @@ html, #body{
     text-decoration: none;
     font-family: 'Spartan', sans-serif;
     font-size: 20px;
+    text-shadow: 0 0 2px red;
 }
  
 .linkInicio:hover{
@@ -140,7 +145,7 @@ html, #body{
     width: 5%;
     height: 10%;
     display: none;
-    box-shadow: 0 0 40px #F2CB05;
+    box-shadow: 0 0 25px #f2cb0591;
 }
 
 #imgBtnTop{
@@ -251,6 +256,7 @@ html, #body{
 }
 
 #conteudoSobre{
+    height: 25%;
     width: 70%;
     margin: 0 auto;
     text-align: center;
@@ -268,7 +274,7 @@ html, #body{
 }
 
 #pontoImg{
-    height: 10%;
+    height: 20%;
     width: 10%;
     position: relative;
 }
@@ -279,7 +285,22 @@ html, #body{
     font-size: 1.5vmax;
     text-shadow: 1px 1px 1px #f29f05;
 }
-
+#iconeMapa{
+    width: 12%;
+    margin-top: 5%;
+}
+#divTxtLocal{
+    width: 33%;
+    margin: 0 auto;
+    padding-bottom: 10%;
+}
+.txtFooter{
+    padding-left: 4%;
+    float: left;
+    text-shadow: 1px 1px 1px #f29f05;
+    font-family: 'Quicksand', sans-serif;
+    color: #0d0d0d;
+}
 /*Conteudo dos servicos*/
 #servicosSec{
     border-bottom-color: #f0f0f0;
@@ -386,7 +407,7 @@ html, #body{
     margin: 0 auto;
     background-color: #0d0d0d;
     border-radius: 1%;
-    box-shadow: 10px 10px 6px black;
+    box-shadow: 10px 10px 12px black;
 }
 
 #conteudoContato{
@@ -412,7 +433,7 @@ html, #body{
 #imgIconEmail{
     width: 25%;
     height: 25%;
-    margin-top: 15%;
+    margin-top: 25%;
 }
 
 .divIconesContato{
@@ -530,41 +551,66 @@ html, #body{
 }
 
 #btnEnviar{
-    background-color: #0d0d0d;
-    border-style: solid;
-    border-color: #F2CB05;
-    border-radius: 10%;
-    color: white;
-    font-family: 'Quicksand', sans-serif;
+    background-color:#0d0d0d;
+	-webkit-border-top-left-radius:28px;
+	-moz-border-radius-topleft:28px;
+	border-top-left-radius:28px;
+	-webkit-border-top-right-radius:28px;
+	-moz-border-radius-topright:28px;
+	border-top-right-radius:28px;
+	-webkit-border-bottom-right-radius:28px;
+	-moz-border-radius-bottomright:28px;
+	border-bottom-right-radius:28px;
+	-webkit-border-bottom-left-radius:28px;
+	-moz-border-radius-bottomleft:28px;
+	border-bottom-left-radius:28px;
+    text-indent:0;
+	border:2px solid #f2ca05;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	font-style:normal;
+    height:40px;
+    width:103px;
+	text-decoration:none;
+	text-align:center;
     transition: 0.3s;
+    outline: none;
 }
 
 #btnEnviar:hover{
-    box-shadow: 0px 0px 10px #F2CB05;
+	background-color:#f2ca05;
+    text-shadow: 3px 3px 1px #f29f05;
+    box-shadow: 6px 6px 1px black;
     transition: 0.3s;
+    color: #0d0d0d;
 }
 
+/*Rodapé*/
 .footer{
     background-color: #0d0d0d;
 }
-
-#gitIcon{
-    width: 4%;
-}
-
-#divTxtLocal{
-    text-align: center;
-    background-color: blue;
-    width: 30%;
-    float: left;
-}
-
 #divTxtMe{
-    background-color: red;
     width: 30%;
     float: left;
+    margin-left: 1.5%;
+    margin-top: 1.2%;
 }
-
+.divIconesFooter{
+}
+.divIconesFooter .icones{
+    width: 3%;
+    margin-left: 0.5%;
+}
+.hrFooter{
+    background-color: #f29f05;
+    width: 20%;
+    padding-bottom: 0.3%;
+    margin-bottom: -1%;
+    opacity: 1;
+}
 /*Css mobile*/
 @media screen and (max-width: 1024px) {
     /*Menu*/
@@ -617,8 +663,8 @@ html, #body{
 
     /*botão de subir a pagina*/
     #btnTop{
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         box-shadow: 0 0 10px #F2CB05;
         border-radius: 100%;
     
@@ -632,19 +678,33 @@ html, #body{
     }
 
     /*Sobre*/
+    #sobreSec{
+    }
+    #conteudoSobre{
+        width: 90%;
+    }
     #sobreTxt {
-    font-size: 16px;
+        font-size: 16px;
 	}
-
+    #divTxtLocal{
+        margin-top: 5%;
+        margin-bottom: 15%;
+        width: 100%;
+        position: relative;
+    }
+    #iconeMapa{
+        width: 12%;
+    }
     /*Conteudo dos servicos*/
     #servicosSec{
-        height: 120%;
+        height: 100%;
         width: 100%;
     }
 
     .servicosC{
         width: 100%;
         height: 80%;
+        margin-top: 5%;
     }
 
     .hrServico{
@@ -655,26 +715,26 @@ html, #body{
     .linha1Servico{
         width: auto;
         height: 40%;
-        margin-top: 6%;
+        margin-top: 30%;
     }
 
     .linha1Servico .divIcone1{
         width: 30%;
         float: left;
-        height: 100%;
+        height: auto;
     }
 
     .linha1Servico .divIcone2{
         margin-left: 5%;    
         width: 30%;
-        height: 100%;
+        height: auto;
         float: left;
     }
 
     .linha1Servico .divIcone3{
         margin-left: 5%;    
         width: 30%;
-        height: 100%;
+        height: auto;
         float: left;
     }
 
@@ -721,7 +781,6 @@ html, #body{
     /*Contato*/
     #contatoSec{
         height: 100%;
-        margin-bottom: 100%;
     }
 
     #containerContato{
@@ -803,19 +862,19 @@ html, #body{
     }
 
     #lblEmail{
-        margin-top: 6%;
+        margin-top: 8%;
         margin-left: 7%;
     }
 
     #txtAssunto{
         width: 90%;
-        height: 4%;
+        height: 41%;
         margin-left: 5%;
         margin-top: -4%;
     }
 
     #lblAssunto{
-        margin-top: 9.36%;
+        margin-top: 7.6%;
         margin-left: 7%;
         padding-left: 2%;
         padding-right: 2%;
@@ -828,13 +887,23 @@ html, #body{
     }
 
     #lblMensagem{
-        margin-top: 5%;
+        margin-top: 4%;
         margin-left: 7%;
         padding-left: 1%;
         padding-right: 1%;
     }
 
+    /*Rodapé*/
+    .divIconesFooter .icones{
+        width: 6%;
+        margin-left: 0.5%;
+    }
+    .hrFooter{
+        background-color: #f29f05;
+        width: 25%;
+        padding-bottom: 0.3%;
+        margin-bottom: -1%;
+        opacity: 1;
+    }
 }
 
-@media screen and (max-width: 1024px) {
-}

@@ -101,10 +101,18 @@
             
             <p id="sobreTxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus euismod quis viverra nibh cras pulvinar. Lobortis mattis aliquam faucibus purus in massa. Morbi leo urna molestie at elementum eu facilisis. Netus et malesuada fames ac turpis egestas maecenas pharetra convallis. Nisl purus in mollis nunc sed id semper risus. Tortor dignissim convallis aenean et tortor at risus viverra. Scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Nunc sed augue lacus viverra vitae congue eu. Nunc aliquet bibendum enim facilisis gravida neque. Ultrices eros in cursus turpis massa. Dolor morbi non arcu risus quis varius. Morbi leo urna molestie at elementum eu facilisis sed. Pellentesque habitant morbi tristique senectus et netus et. Urna nunc id cursus metus aliquam eleifend. Ornare quam viverra orci sagittis eu volutpat odio facilisis mauris. Rhoncus mattis rhoncus urna neque viverra justo. Porttitor lacus luctus accumsan tortor. Aliquam vestibulum morbi blandit cursus risus at ultrices.</p>
             
-            <hr>
             
-            <br>
-        
+            
+            <hr>
+            <div id="divTxtLocal">
+                <img src="img/icon-map.png" id="iconeMapa" alt="icone Mapa">
+                <span class="txtFooter ">Nome da empresa<br>
+                    Seg. à sex. 10h - 16h. Sáb. 10h - 16h<br>
+                    R. Nome da rua, 123, nome do bairro, SP
+                </span>
+            
+            </div>
+            
         </div>
     
     </section>
@@ -222,38 +230,28 @@
                         <h5 id="subTxtContato">Entre em contato conosco através de nosso E-mail ou através de outros meios de contato!</h5>
           
                     </center>
-         
-                    <br>
-                    
-                    <div  class="divIconesContato" >
-             
-                        <a href="#"><img src="img/WhatsAppIcone.png" class="icones" alt="WhatsApp icone"></a>
-                        <a href="#"><img src="img/instagramIcone.png" class="icones" alt="Facebook icone"></a>
-                        <a href="#"><img src="img/iconeFacebook.png" class="icones" alt="Instragram icone"></a>
-            
-                    </div>
            
                 </div>
            
-                <form action="" id="formContato">
+                <form action="email.php" method="POST" id="formContato">
                
                     <label id="lblNome" for="txtNome">Nome Completo</label>
                     <br>
-                    <input type="text" id="txtNome" onfocus="foco1()" onblur="desfoque()" >
+                    <input type="text" name="nome" id="txtNome" onfocus="foco1()" onblur="desfoque()" >
 
                     <br>
                     <br>
 
                     <label id="lblEmail" for="txtEmail">E-mail</label>
                     <br>
-                    <input type="email" id="txtEmail" onfocus="foco2()" onblur="desfoque()">
+                    <input type="email" name="email" id="txtEmail" onfocus="foco2()" onblur="desfoque()">
 
                     <br>
                     <br>
 
                     <label id="lblAssunto" for="txtAssunto">Assunto</label>
                     <br>
-                    <select name="" id="txtAssunto" onfocus="foco3()" onblur="desfoque()">
+                    <select name="assunto" id="txtAssunto" onfocus="foco3()" onblur="desfoque()">
                   
                         <option value=""></option>
                         <option value="1">Sugestão</option>
@@ -267,13 +265,13 @@
                         
                     <label id="lblMensagem" for="txtMensagem">Sua mensagem</label>
                     <br>
-                    <textarea type="text" id="txtMensagem" onfocus="foco4()" onblur="desfoque()" class="form-control" rows="3"></textarea>
+                    <textarea name="mensagem" type="text" id="txtMensagem" onfocus="foco4()" onblur="desfoque()" class="form-control" rows="3"></textarea>
 
                     <br>
         
                     <center>
               
-                        <button id="btnEnviar">enviar</button>
+                        <button type="submit" id="btnEnviar">Enviar</button>
              
                     </center>
                 
@@ -297,32 +295,22 @@
 
         <div class="container">
    
-            <div id="divTxtLocal">
-        
-                <img src="img/icon-map.png" alt="icone Mapa">
-                <br>
-                <span class="txtFooter text-muted">Nome da empresa<br>
-                    R. Nome da rua, 123, nome do bairro, SP<br>
-                    Seg. à sex. 10h - 16h. Sáb. 10h - 16h
-                </span>
-            
-            </div>
-            
-            <div id="divTxtMe">
-            
                 <center>
             
-                    <a href="https://github.com/leandroSalesCotrim">
-                        <img id="gitIcon" src="img/gitIcon.png" alt="gitHub icone">
-                    </a>
+                    <div  class="divIconesFooter" >
+             
+                        <a href="#"><img src="img/WhatsAppIcone.png" class="icones" alt="WhatsApp icone"></a>
+                        <a href="#"><img src="img/instagramIcone.png" class="icones" alt="Facebook icone"></a>
+                        <a href="#"><img src="img/iconeFacebook.png" class="icones" alt="Instragram icone"></a>
             
+                    </div>
+                    
+                    <hr class="hrFooter">
                     <br>
             
                     <span class="text-muted">© 2021 por Leandro de Sales Cotrim.</span>
             
                 </center>
-            
-            </div>
         
         </div>
     

@@ -9,45 +9,37 @@ $(window).on("scroll touchmove", function() {
     if ($(document).scrollTop() >= $("#inicioSec").position().top) {
     
       //definiindo os valores
-      $('.linkInicio').css('text-decoration-line', 'underline');
-      $('.linkInicio').css('text-decoration-color', '#F2CB05');
-      $('.linkInicio').css('text-decoration-thickness', '13%');
-      $('.linkSobre').css('text-decoration', 'none');
-      $('.linkServico').css('text-decoration', 'none');
-      $('.linkContato').css('text-decoration', 'none');
+      $('.linkInicio').css('color', '#f29f05');
+      $('.linkSobre').css('color', 'white');
+      $('.linkServico').css('color', 'white');
+      $('.linkContato').css('color', 'white');
     
     }
 
     if ($(document).scrollTop() >= $("#sobreSec").position().top) {
     
-      $('.linkSobre').css('text-decoration-line', 'underline');
-      $('.linkSobre').css('text-decoration-color', '#F2CB05');
-      $('.linkSobre').css('text-decoration-thickness', '13%');
-      $('.linkInicio').css('text-decoration', 'none');
-      $('.linkServico').css('text-decoration', 'none');
-      $('.linkContato').css('text-decoration', 'none');
+      $('.linkSobre').css('color', '#f29f05');
+      $('.linkInicio').css('color', 'white');
+      $('.linkServico').css('color', 'white');
+      $('.linkContato').css('color', 'white');
     
     } 
       
     if ($(document).scrollTop() >= $("#topoServico").position().top) {
     
-      $('.linkServico').css('text-decoration-line', 'underline');
-      $('.linkServico').css('text-decoration-color', '#F2CB05');
-      $('.linkServico').css('text-decoration-thickness', '13%');
-      $('.linkInicio').css('text-decoration', 'none');
-      $('.linkSobre').css('text-decoration', 'none');
-      $('.linkContato').css('text-decoration', 'none');
+      $('.linkServico').css('color', '#f29f05');
+      $('.linkInicio').css('color', 'white');
+      $('.linkSobre').css('color', 'white');
+      $('.linkContato').css('color', 'white');
     
     }
 
-    if ($(document).scrollTop() >= $("#formContato").position().top) {
+    if ($(document).scrollTop() >= $("#contatoSec").position().top) {
     
-      $('.linkContato').css('text-decoration-line', 'underline');
-      $('.linkContato').css('text-decoration-color', '#F2CB05');
-      $('.linkContato').css('text-decoration-thickness', '13%');
-      $('.linkInicio').css('text-decoration', 'none');
-      $('.linkSobre').css('text-decoration', 'none');
-      $('.linkServico').css('text-decoration', 'none');
+      $('.linkContato').css('color', '#f29f05');
+      $('.linkInicio').css('color', 'white');
+      $('.linkSobre').css('color', 'white');
+      $('.linkServico').css('color', 'white');
     
     }
       
@@ -65,14 +57,14 @@ $(window).on("scroll touchmove", function() {
     divMenu = document.getElementById("divMenu");
 
 
-    //Se o scrollTop da pagina for movido 95 pixels, o menu ficara com o fundo escuro e o tamanho ira diminuir
+    //Se o scrollTop da pagina for movido 200 pixels, o menu ficara com o fundo escuro e o tamanho ira diminuir
     //E o botão de subir a pagina ira ficar visivel
-    if(document.documentElement.scrollTop > 95){
+    if(document.documentElement.scrollTop > 200){
       btnTop.style.display = "block";
       btnTop.style.animationDuration = "0.7s";
       divMenu.style.transition = "0.3s";
       divMenu.style.backgroundColor = "#0d0d0ddc";
-      divMenu.style.height = "9%";
+      divMenu.style.height = "10%";
     }
 
     //Senão o menu e o botão voltara para a posição orgininal
